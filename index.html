@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niels Baptist">
+    <meta name="description" content="Hi! I'm Niels Baptist, an AI student at the Thomas More IT Factory, check out more about me on my website.">
+    <title>Portfolio - Niels Baptist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- banner -->
+    <div class="container banner">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img id="profilepic" class="m-auto d-block w-100 rounded-circle p-lg-5 p-md-1 p-sm-5 mt-md-5 mt-lg-0" src="./img/profilepic.jpg" alt="Picture of Niels">
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <h1 class="p-5 p-sm-2">Hi! I'm <span class="text-info">Niels Baptist</span>
+            <br>
+            <div class="d-block m-auto" id="google_translate_element"></div>
+          </h1>
+          <!-- <h3 class="pl-5 pr-5 text-secondary"><a class="btn" id="BtnNederlands">Nederlands</a> &nbsp; <a class="btn" id="BtnEnglish">English</a> &nbsp; <a class="btn" id="BtnFrancais">Français</a></h2> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- nav pills -->
+    <div class="container mt-2 mb-2">
+      <div class="row navigation text-center rounded">
+        <div class="col-sm-12 col-md-4">
+          <button id="BtnAbout" class="btn">About</button>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <button id="BtnProjects" class="btn">Projects</a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <button id="BtnContact" class="btn">Contact</a>
+        </div>
+    </div>
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link titlegrootte" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              About myself
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <p>Hello! My name is Niels, I'm an Artficial Intelligence student at Thomas More, here are some of the most important things you should know about me:</p>
+                <ul>
+                  <li><i class="fas fa-running"></i> I love running and cycling <i class="fas fa-biking"></i></li>
+                  <li><i class="fas fa-rocket"></i> Passionate about Space & Aeronautics</li>
+                  <li><i class="fas fa-laptop"></i> Technology enthousiast</li>
+                  <li><i class="fas fa-chalkboard-teacher"></i> I like learning & explaining things</li>
+                  <li><i class="fas fa-music"></i> Music lover </li>
+                </ul>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <iframe class="rounded w-100 h-100 p-1" src="https://open.spotify.com/embed/playlist/07zQHBj6nq7ikjh3pR3Tz3" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed titlegrootte" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Education
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <p>I started out my education studying Economics at the Sint-Fransiscus College highschool, as soon as i was able to study IT (Applied Computer Sciences)
+                  in the fifth year, i signed up for it. It turns out to be one of the best decisions i've made, since i've been enthousiast about it ever since. 
+                </p>
+                <p class="alert alert-warning"><a target="blank" href="https://www.sfc.be/">Sint-Fransiscuscollege</a> (2013-2016) <span class="font-weight-bold">Economics</span></p>
+                <p class="alert alert-warning"><a target="blank" href="https://www.sfc.be/">Sint-Fransiscuscollege</a> (2016-2019) <span class="font-weight-bold">Applied Computer Sciences</span></p>
+                <p class="alert alert-warning"><a target="blank" href="thomasmore.be">Thomas More</a> (2019-...) <span class="font-weight-bold">Applied Computer Sciences (AI)</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed titlegrootte" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Experience
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <p>I've always been an engaged and motivated student, as a result, my summer days have been filled with working experience for as long as i have been allowed to
+                  work.
+                </p>
+                <p class="alert alert-warning"><a target="blank" href="https://klgc.be/">Royal Limburg Golf</a> (2015-2019) <span class="font-weight-bold"> Student Job</span> as a greenkeeper</p>
+                <p class="alert alert-warning"><a target="blank" href="https://www.edisonenergy.be/">Edison Energy</a> (02/2019) <span class="font-weight-bold">Internship</span> 
+                  as a junior database engineer</p>
+                <p class="alert alert-warning"><a target="blank" href="https://www.patronale-life.be/nl/dochtermaatschappijen/patronale-solar">SAMCO</a> (2020-...) <span class="font-weight-bold">Student Job</span>
+                 as a junior solar engineer and IT support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="DivContact" class="container">
+      <div class="row mt-2 mb-2">
+        <div class="col-12">
+            <h3 class="pt-2 pb-2 w-100">Let's get in touch</h3>
+        </div>
+      </div>
+      <div class="row mt-2 mb-2">
+        <div class="col-12">
+            <ul class="contact ml-0 pl-0">
+              <li><a href="mailto:r0793266@student.thomasmore.be"><i class="fas fa-at"></i> E-mail</a> </li>
+              <li><a href="https://www.linkedin.com/in/nielsbaptist/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><i class="fab fa-discord"></i> Niels Baptist#0447</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div id="DivProjects" class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="p-5">Down here you can find some of the projects and assignments i've been working on ever since i joined the IT Factory, if you have
+            any questions or if you are looking for some advice on a similar project, you <a class="text-info font-weight-bold" id="BtnContactA">can reach out to me</a>.</p>
+        </div>
+      </div>
+      <div class="row mt-2 mb-3 grid">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/shippingchallenge.jpg" alt="Shipping Challenge">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/techandhealth_thumbnail.jpg" alt="LEF-Lab: Tech & Health">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/hackathon.jpg" alt="Smart Policing Hackathon">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/asr.png" alt="Algemene Studentenraad ASR">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/webserver.jpg" alt="Raspberry pi webserver">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/pc_open.jpg" alt="Geopende laptop">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <img class="w-100 rounded" src="./img/popos.png" alt="POP!os Linux Distro">
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <!-- footer -->
+    <footer class="footer" width="100%">
+      <svg class="w-100" viewBox="0 -20 700 100" width="100%" height="110" preserveAspectRatio="none">
+        <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#e6bc53" />
+        <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#17a2b8" />
+      </svg>
+      <div class="container">
+        2021 &copy; Niels Baptist</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>  
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
