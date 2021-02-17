@@ -1,3 +1,6 @@
+html{
+    width: 100%  !important;
+}
 body{
     font-family: 'Poppins', sans-serif;
     width: 100% !important;
@@ -157,5 +160,9 @@ body {top: 0px!important;}
     }	
 }
 
+#spotify
+{
+    filter: drop-shadow(5px 5px 1px #17a2b8);
+}
 
 
