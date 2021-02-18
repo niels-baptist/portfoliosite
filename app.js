@@ -27,10 +27,16 @@ $( "#BtnContactA" ).click(function() {
     resetClass($('#BtnContact'));
 });
 
+$( "#BtnCv" ).click(function() {
+    hideAll($('#DivCv'));
+    resetClass($('#BtnCv'));
+});
+
 function hideAll(DivToShow) {
     $('#accordion').hide();
     $('#DivContact').hide();
     $('#DivProjects').hide();
+    $('#DivCv').hide();
     $(DivToShow).show();
 }
 
@@ -38,5 +44,6 @@ function resetClass(LinkToGiveClass) {
     $('#BtnAbout').removeClass('text-white bg-info');
     $('#BtnProjects').removeClass('text-white bg-info');
     $('#BtnContact').removeClass('text-white bg-info');
+    $('#BtnCv').removeClass('text-white bg-info');
     $(LinkToGiveClass).addClass('text-white bg-info');
 }
