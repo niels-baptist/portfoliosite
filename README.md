@@ -7,3 +7,5 @@ Some useful links
 - Favicon: https://realfavicongenerator.net/
 - Google Translate: https://www.w3schools.com/howto/howto_google_translate.asp 
 - PDF embed: https://www.labnol.org/embed-pdf-200208
+
+If you have any questions you can contact me on r0793266@student.thomasmore.be
