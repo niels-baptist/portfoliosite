@@ -165,4 +165,8 @@ body {top: 0px!important;}
     filter: drop-shadow(5px 5px 1px #17a2b8);
 }
 
+.projectinhoud span
+{
+    font-weight: bold;
+}
 

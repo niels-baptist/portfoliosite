@@ -159,25 +159,26 @@
     <div id="DivProjects" class="container">
       <div class="row">
         <div class="col-12">
-          <p class="p-5">Down here you can find some of the projects and assignments i've been working on ever since i joined the IT Factory, if you have
-            any questions or if you are looking for some advice on a similar project, you <a class="text-info font-weight-bold" id="BtnContactA">can reach out to me</a>.</p>
+          <p class="p-5">Down here you can find some of the projects and assignments i've been working on ever since i joined the IT Factory, <span class="font-weight-bold">you can learn more about them by clicking on the images. </span>
+            If you have any questions or if you are looking for some advice on a similar project, you can 
+            <a class="text-info font-weight-bold" id="BtnContactA"> reach out to me</a>.</p>
         </div>
       </div>
       <div class="row mt-2 mb-3 grid">
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <img class="w-100 rounded" src="./img/shippingchallenge.jpg" alt="Shipping Challenge">
+          <img class="w-100 rounded" data-target="#ModalShipping" data-toggle="modal" src="./img/shippingchallenge.jpg" alt="Shipping Challenge">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <img class="w-100 rounded" src="./img/techandhealth_thumbnail.jpg" alt="LEF-Lab: Tech & Health">
+          <img class="w-100 rounded" data-target="#ModalTechAndHealth" data-toggle="modal" src="./img/techandhealth_thumbnail.jpg" alt="LEF-Lab: Tech & Health">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <img class="w-100 rounded" src="./img/hackathon.jpg" alt="Smart Policing Hackathon">
+          <img class="w-100 rounded" data-target="#ModalSmartPolicingHackathon" data-toggle="modal" src="./img/hackathon.jpg" alt="Smart Policing Hackathon">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <img class="w-100 rounded" src="./img/asr.png" alt="Algemene Studentenraad ASR">
+          <img class="w-100 rounded" data-target="#ModalStudentCouncil" data-toggle="modal" src="./img/asr.png" alt="Algemene Studentenraad ASR">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
-          <img class="w-100 rounded" src="./img/webserver.jpg" alt="Raspberry pi webserver">
+          <img class="w-100 rounded" data-target="#ModalFileServer" data-toggle="modal" src="./img/webserver.jpg" alt="Raspberry pi Fileserver">
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
           <img class="w-100 rounded" src="./img/pc_open.jpg" alt="Geopende laptop">
@@ -194,15 +195,264 @@
       </div>
     </div>
 
+    <!-- project modals  -->
+
+    <!-- shipping challenge -->
+    <div class="modal fade w-100" tabindex="-1" id="ModalShipping">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Shipping Challenge</h5>
+            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img class="rounded w-100" src="./img/shippingchallenge.jpg" alt="Shipping Challenge">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <ul class="projectinhoud">
+                  <li>
+                    <span class="text-info">Course?</span>
+                    <i class="fab fa-linux"></i> Linux Web Services
+                  </li>
+                  <li>
+                    <span class="text-info">What?</span>
+                    Making a <a target="blank" href="https://kubernetes.io/">Kubernetes</a> cluster with 3 workers that serve a 
+                    web application. The web application - that was written in PHP - serves a record from a 
+                    MongoDB database, and lives on an Apache webserver. These different workers balance the load and auto-restart after failing.
+                  </li>
+                  <li>
+                    <span class="text-info">When?</span>
+                    At the end of the first semester of my second year. 
+                  </li>
+                  <li>
+                    <span class="text-info">Experience?</span>
+                    <i class="fas fa-thumbs-up"></i> Learned to properly host a web application.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Tech and Health -->
+     <div class="modal fade w-100" tabindex="-1" id="ModalTechAndHealth">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tech and Health</h5>
+            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img class="rounded w-100" src="./img/techandhealth.jpg" alt="Tech and Health">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <ul class="projectinhoud">
+                  <li>
+                    <span class="text-info">Course?</span>
+                    <i class="fas fa-user-nurse"></i> LEF-lab: Tech & health
+                  </li>
+                  <li>
+                    <span class="text-info">What?</span>
+                    Prototyping technical solutions for elderly people living in <a href="Brensj.be">Brensj</a> 
+                    its mobile living units in order to combat loneliness and to improve 
+                    the inhabitants accident prevention. I fitted a Raspberry pi with a webcam and mic, and hooked
+                    it up to a 4K monitor to which it displayed a dashboard with <a target="blank" href="dakboard.com">Dakboard</a>
+                  </li>
+                  <li>
+                    <span class="text-info">When?</span>
+                    The entire first semester of my second year. 
+                  </li>
+                  <li>
+                    <span class="text-info">Experience?</span>
+                    <i class="fas fa-thumbs-up"></i> Improved my capabilities to empathize and learned a lot about Debian autostart
+                    and device recognition.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Smart Policing Hackathon -->
+    <div class="modal fade w-100" tabindex="-1" id="ModalSmartPolicingHackathon">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Smart Policing Hackathon</h5>
+            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img class="rounded w-100" src="./img/hackathon.jpg" alt="Tech and Health">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <ul class="projectinhoud">
+                  <li>
+                    <span class="text-info">
+                      <i class="fas fa-user-alt"></i> Personal project <br>
+                      <a target="blank" href="https://police-hackathon.be/nl/">Link to the hackathon</a>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="text-info">What?</span>
+                    In partnership with EY and the Federal Belgian Police, we prototyped ideas in order to 
+                    improve on smart interactions between the police and civilians. I helped developing our idea
+                    to instantly share GPS location and public security cameras in close proximity to someone calling
+                    the emergency services. 
+                  </li>
+                  <li>
+                    <span class="text-info">When?</span>
+                    At the middle of the first semester of my second year. 
+                  </li>
+                  <li>
+                    <span class="text-info">Experience?</span>
+                    <i class="fas fa-thumbs-up"></i> Improved a great deal on Pitching ideas.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- File server -->
+    <div class="modal fade w-100" tabindex="-1" id="ModalFileServer">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">File server</h5>
+            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img class="rounded w-100" src="./img/omv.jpg" alt="Openmediavault">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <ul class="projectinhoud">
+                  <li>
+                    <span class="text-info">
+                      <i class="fas fa-user-alt"></i> Personal Project
+                    </span>
+                  </li>
+                  <li>
+                    <span class="text-info">What?</span>
+                    Because i was interested in how a file server worked, i made one myself. 
+                    With the help of <a href="https://www.openmediavault.org/">openmediavault</a> i made a file
+                    server on the raspberry pi 4 running raspbian, 
+                    and with some help of <a href="https://www.gratissoftwaresite.nl/downloads/aomei-backupper-standard-backup-image-clone-restore">aomeibackupper</a>, 
+                    i scheduled automatic backups so that i don't have to worry about this.
+                  </li>
+                  <li>
+                    <span class="text-info">When?</span>
+                    At the middle of the second semester of my first year. 
+                  </li>
+                  <li>
+                    <span class="text-info">Experience?</span>
+                    <i class="fas fa-thumbs-up"></i> Learned how network locations work, became more conscious about
+                    the importance of always having a backup.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Student Council -->
+    <div class="modal fade w-100" tabindex="-1" id="ModalStudentCouncil">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Student Council</h5>
+            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-window-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img class="rounded w-100" src="./img/asr.png" alt="Student Council">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <ul class="projectinhoud">
+                  <li>
+                    <span class="text-info">
+                      <i class="fas fa-user-alt"></i> Thomas More
+                    </span>
+                  </li>
+                  <li>
+                    <span class="text-info">What?</span>
+                    Ever since i joined Thomas More, i have been a member of the IT Factory's student council.
+                    Since this year however, i joined the general student council (ASR) and the Stuvo council
+                    on top of this. I wouldn't call myself a fan of politics, but i certainly like to exchange
+                    opinions with different people.
+                  </li>
+                  <li>
+                    <span class="text-info">When?</span>
+                    2019-..
+                  </li>
+                  <li>
+                    <span class="text-info">Experience?</span>
+                    <i class="fas fa-thumbs-up"></i> Improved soft skills, improved financial reporting skills
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
     <!-- cv -->
     <div class="container" id="DivCv">
-      <div class="row">
+      <div class="row row mt-2 mb-2">
         <div class="col-12">
-          <h3>My resume</h3>
+          <h3 class="pt-2 pb-2 w-100">My resume</h3>
           <a class="btn btn-info" target="blank" href="https://drive.google.com/file/d/14BDUCagTIkCu1jX3bdsrRFEISnPNEz0G/view?usp=sharing">Openen in nieuw tabblad</a>
         </div>
       </div>
-      <div class="row">
+      <div class="row row mt-2 mb-2">
         <div class="col-12">
             <iframe class="w-100 rounded" frameborder="0" scrolling="no" height="800" src="https://drive.google.com/file/d/14BDUCagTIkCu1jX3bdsrRFEISnPNEz0G/preview"></iframe>
         </div>

@@ -32,6 +32,7 @@ $( "#BtnCv" ).click(function() {
     resetClass($('#BtnCv'));
 });
 
+//divs verbergen/tonen
 function hideAll(DivToShow) {
     $('#accordion').hide();
     $('#DivContact').hide();
@@ -40,6 +41,7 @@ function hideAll(DivToShow) {
     $(DivToShow).show();
 }
 
+//button class toepassen/verwijderen
 function resetClass(LinkToGiveClass) {
     $('#BtnAbout').removeClass('text-white bg-info');
     $('#BtnProjects').removeClass('text-white bg-info');
