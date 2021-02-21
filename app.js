@@ -38,7 +38,7 @@ function hideAll(DivToShow) {
     $('#DivContact').hide();
     $('#DivProjects').hide();
     $('#DivCv').hide();
-    $(DivToShow).show();
+    $(DivToShow).show(600);
 }
 
 //button class toepassen/verwijderen
