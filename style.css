@@ -180,3 +180,12 @@ body {top: 0px!important;}
     font-weight: bold;
 }
 
+.carousel button{
+    /* border: none;
+    background-color: none;
+    color: teal;
+    filter: none;
+    width: auto;
+     */
+}
+
