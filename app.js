@@ -12,6 +12,16 @@ $( "#BtnProjects" ).click(function() {
     resetClass($('#BtnProjects'));
 });
 
+$( "#BtnProjectsB" ).click(function() {
+    hideAll($('#DivProjects'));
+    resetClass($('#BtnProjects'));
+});
+
+$( "#BtnResumeA" ).click(function() {
+    hideAll($('#DivCv'));
+    resetClass($('#BtnCv'));
+});
+
 $( "#BtnAbout" ).click(function() {
     hideAll($('#accordion'))
     resetClass($('#BtnAbout'));
