@@ -15,6 +15,10 @@ h1{
     font-size: 20px;
 }
 
+.banner{
+    width: 100%;
+}
+
 #profilepic{
     filter: drop-shadow(20px 20px 1px #17a2b8);
 }
@@ -106,6 +110,12 @@ footer {
   font-family: Roboto, 'Open Sans', sans-serif!important;
   text-transform: uppercase;
 }
+
+.intro
+{
+    list-style-type:none;
+}
+
 .goog-te-gadget-simple  {
   background-color: rgba(255,255,255,0.20)!important;
   border: 1px solid rgba(255,255,255,0.50) !important;
