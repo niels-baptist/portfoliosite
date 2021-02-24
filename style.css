@@ -1,9 +1,5 @@
-html{
-    width: 100%  !important;
-}
 body{
     font-family: 'Poppins', sans-serif;
-    width: 100% !important;
 }
 
 h1{
@@ -111,8 +107,7 @@ footer {
   text-transform: uppercase;
 }
 
-.intro
-{
+.intro{
     list-style-type:none;
 }
 
@@ -178,14 +173,5 @@ body {top: 0px!important;}
 .projectinhoud span
 {
     font-weight: bold;
-}
-
-.carousel button{
-    /* border: none;
-    background-color: none;
-    color: teal;
-    filter: none;
-    width: auto;
-     */
 }
 
