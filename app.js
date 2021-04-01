@@ -48,12 +48,7 @@ function hideAll(DivToShow) {
     $('#DivContact').hide();
     $('#DivProjects').hide();
     $('#DivCv').hide();
-    // if(DivToShow.attr('id') == "DivContact"){
-    //     $(DivToShow).show(600);
-    // }
-    // else{
-        $(DivToShow).show();
-    //}
+    $(DivToShow).show();
 }
 
 //button class toepassen/verwijderen

@@ -1,9 +1,14 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    max-width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    width: 100% !important;
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
 }
 
 h1{
@@ -178,13 +183,11 @@ body {top: 0px!important;}
     }	
 }
 
-#spotify
-{
+#spotify{
     filter: drop-shadow(5px 5px 1px #17a2b8);
 }
 
-.projectinhoud span
-{
+.projectinhoud span{
     font-weight: bold;
 }
 
