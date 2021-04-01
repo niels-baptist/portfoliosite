@@ -6,6 +6,11 @@ body{
     width: 100% !important;
 }
 
+iframe, img {
+    max-width: 100% !important;
+}
+
+
 html
 {
     margin: 0;
