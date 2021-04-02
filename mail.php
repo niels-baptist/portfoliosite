@@ -68,11 +68,11 @@ require './vendor/autoload.php';
 
         //Content
         $mail->isHTML(true);
-        if(!is_null($_GET['firstname'] && !is_null($_GET['surname']) && !is_null($_GET['message']) && !is_null($_GET['mail']))){
-          $firstname = $_GET['firstname'];
-          $surname = $_GET['surname'];
-          $email = $_GET['mail'];
-          $message = $_GET['message'];
+        $firstname = $_GET['firstname'];
+        $surname = $_GET['surname'];
+        $email = $_GET['mail'];
+        $message = $_GET['message'];
+        if(!is_null($firstname && !is_null($surname) && !is_null($firstname) && !is_null($message))){
           $mail->Subject = 'Contact from ' . $firstname . ' ' . $surname;
           $mail->Body    = 'Naam: ' . $firstname . ' ' . $surname . '</br>' . 'Boodschap: ' .  $message;
           $mail->send();
