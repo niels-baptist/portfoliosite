@@ -67,21 +67,27 @@ require './vendor/autoload.php';
         $mail->addAddress('nielsbaptist01@gmail.com', 'sinners portfolio contact'); 
 
         //Content
-        $mail->isHTML(true);          
-        $firstname = $_GET['firstname'];
-        $surname = $_GET['surname'];
-        $email = $_GET['mail'];
-        $message = $_GET['message'];
-        $mail->Subject = 'Contact from ' . $firstname . ' ' . $surname;
-        $mail->Body    = 'Naam: ' . $firstname . ' ' . $surname . '</br>' . 'Boodschap: ' .  $message;
-        $mail->send();
-        echo '<div class="container">';
-            echo '<div class="row">';
-                echo '<div class="col-12">';
-                    echo '<p class="alert alert-info">Thanks for your message! I will get back to you as soon as possible.</p>';
-                echo '</div>';
-            echo '</div>';
-        echo '</div>';
+        $mail->isHTML(true);
+        if(!is_null($_GET['firstname'] && !is_null($_GET['surname']) && !is_null($_GET['message']) && !is_null($_GET['mail']))){
+          $firstname = $_GET['firstname'];
+          $surname = $_GET['surname'];
+          $email = $_GET['mail'];
+          $message = $_GET['message'];
+          $mail->Subject = 'Contact from ' . $firstname . ' ' . $surname;
+          $mail->Body    = 'Naam: ' . $firstname . ' ' . $surname . '</br>' . 'Boodschap: ' .  $message;
+          $mail->send();
+          echo '<div class="container">';
+              echo '<div class="row">';
+                  echo '<div class="col-12">';
+                      echo '<p class="alert alert-info">Thanks for your message! I will get back to you as soon as possible.</p>';
+                  echo '</div>';
+              echo '</div>';
+          echo '</div>';
+         } 
+         else{
+          echo '<p class="alert alert-danger">Whoops! Seems like something went wrong, your message did not come thru. I will try my best to fix this as soon as possible!</p>';
+
+         }
         }
         catch (Exception $e){
             echo '<p class="alert alert-danger">Whoops! Seems like something went wrong, your message did not come thru. I will try my best to fix this as soon as possible!</p>';
