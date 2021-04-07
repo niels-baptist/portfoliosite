@@ -104,6 +104,15 @@ i{
     background-color: white;
 }
 
+.card:hover{
+    border: #17a2b8 1px solid;
+    /* background-color: #e6bc53; */
+}
+
+/* .card-body i{
+    color: #17a2b8;
+} */
+
 .collapse a{
     color: black;
 }
