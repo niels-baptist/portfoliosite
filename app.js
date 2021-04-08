@@ -1,6 +1,7 @@
 $(document).ready(function() {
     hideAll($('#accordion'));
     resetClass($('#BtnAbout'));
+    googleTranslateElementInit();
 });
 $(window).on('load', function () {
     $('select').addClass('p-2 rounded');
@@ -47,6 +48,7 @@ function resetClass(LinkToGiveClass) {
     $('#BtnCv').removeClass('text-white bg-info');
     $(LinkToGiveClass).addClass('text-white bg-info');
 }
+
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
   }
