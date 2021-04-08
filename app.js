@@ -40,6 +40,7 @@ function hideAll(DivToShow) {
     $('#DivProjects').hide();
     $('#DivCv').hide();
     $(DivToShow).show();
+    console.log("hidden");
 }
 function resetClass(LinkToGiveClass) {
     $('#BtnAbout').removeClass('text-white bg-info');
