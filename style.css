@@ -1,174 +1,25 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100% !important;
-}
-iframe, img {
-    max-width: 100% !important;
-}
-html
-{
-    margin: 0;
-    padding: 0;
-    width: 100% !important;
-}
-h1{
-    margin-top: 15%;
-    font-size: xxx-large;
-}
-.banner .btn{
-    font-size: 20px;
-}
-.banner{
-    width: 100%;
-}
-#profilepic{
-    max-width: 100%;
-    filter: drop-shadow(0px 20px 0px #17a2b8);
-}
-@media (min-width:768px)
-{
-    #profilepic
-    {
-        filter: drop-shadow(20px 20px 0px #17a2b8);
-    }
-}
-.navigation, .grid{
-    justify-content: space-between;
-}
-.navigation button{
-    margin: 1px;
-    width: 100%;
-    font-size: 20px;
-    border-radius: 5px;
-    background-color: none;
-    color: #17a2b8;
-}
-.navigation button:hover{
-    color: #fff;
-    background-color: #17a2b8;
-}
-.grid div img{
-    margin: 2px;
-}
-i{
-    color: #e6bc53;
-    font-weight: bolder;
-}
-.contact li, .contact li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    list-style-image: none;
-    list-style-type: none;
-}
-.goog-logo-link {
-    display:none !important;
-} 
-.goog-te-gadget{
-    color: transparent !important;
-    font-size: 45px !important;
-    width: 80px !important;
-    height: 80px !important;
-}
-.titlegrootte{
-    color: #17a2b8;
-    font-size: 25px;
-}
-.titlegrootte:hover{
-    color: #17a2b8;
-    font-size: 25px;
-}
-.card-header{
-    background-color: white;
-}
-.card:hover{
-    border: #17a2b8 1px solid;
-}
-.collapse a{
-    color: black;
-}
-.alert-warning{
-    background-color: #e6bc53;
-    color: black;
-}
-footer {
-    position: absolute;
-    width: 100% !important;
-    height: 100px;
-    bottom: 0;
-    overflow: hidden;
-  }
- .goog-te-banner-frame {display:none;}
- #goog-gt-tt {display:none!important;visibility:hidden!important;}
-
-#google_translate_element {
-  position: relative;
-}
-.goog-te-gadget {
-  font-family: Roboto, 'Open Sans', sans-serif!important;
-  text-transform: uppercase;
-}
-.intro{
-    list-style-type:none;
-}
-.goog-te-gadget-simple  {
-  background-color: rgba(255,255,255,0.20)!important;
-  border: 1px solid rgba(255,255,255,0.50) !important;
-  padding: 8px!important;
-  border-radius: 4px!important;
-  font-size: 1rem!important;
-  line-height:2rem!important;
-  display: inline-block;
-  cursor: pointer;
-  zoom: 1;
-}
-.goog-te-menu2 {
-  max-width: 100%;
-}
-.goog-te-menu-value {
-  color: #fff !important;
-}
-.goog-te-menu-value span:nth-child(5) {
-  display:none;
-}
-.goog-te-menu-value span:nth-child(3) {
-  border:none!important;
-  font-family: 'Material Icons';  
-}
-.goog-te-gadget-icon {
-    background-image: url(https://placehold.it/32)!important;
-    background-position: 0px 0px;
-    height: 32px!important;
-    width: 32px!important;
-    margin-right: 8px!important;
-    display: none;
-}
-.goog-te-banner-frame.skiptranslate {display: none!important;} 
-body {top: 0px!important;}
-@media (max-width: 667px) {
-    #google_translate_element {
-        bottom: calc(100% - 50% - 53px);
-        left: 16px!important;
-        width: 100%!important;
-    }
-    .goog-te-gadget {
-        width:100%!important;
-    }
-    .skiptranslate {
-        width:100%!important;			
-    }
-    .goog-te-gadget-simple {
-        width: calc(100% - 32px)!important;
-        text-align: center;
-    }	
-}
-#spotify{
-    filter: drop-shadow(5px 5px 1px #17a2b8);
-}
-.projectinhoud span{
-    font-weight: bold;
-}
+body{font-family: 'Poppins', sans-serif;overflow-x: hidden;}
+html, body{margin: 0;padding: 0;width: 100% !important;}
+iframe, img {max-width: 100% !important;}
+h1{margin-top: 15%;font-size: xxx-large;}
+.banner .btn{font-size: 20px;}
+.banner{width: 100%;}
+#profilepic{max-width: 100%;filter: drop-shadow(0px 20px 0px #17a2b8);} 
+@media (min-width:768px){#profilepic{filter: drop-shadow(20px 20px 0px #17a2b8);}}
+.navigation, .grid{justify-content: space-between;}
+.navigation button{margin: 1px;width: 100%;font-size: 20px;border-radius: 5px;background-color: none;color: #17a2b8;}
+.navigation button:hover{color: #fff;background-color: #17a2b8;}
+.grid div img{margin: 2px;}
+i{color: #e6bc53;font-weight: bolder;}
+.contact li, .contact li a {text-decoration: none;color: black;font-size: 20px;list-style-image: none;list-style-type: none;}
+.titlegrootte{color: #17a2b8;font-size: 25px;}
+.titlegrootte:hover{color: #17a2b8;font-size: 25px;}
+.card-header{background-color: white;}
+.card:hover{border: #17a2b8 1px solid;}
+.collapse a{color: black;}
+.alert-warning{background-color: #e6bc53;color: black;}
+footer {position: relative;width: 100% !important;height: 100px;bottom: 0px;overflow: hidden;margin-top: 100px;}
+.intro{list-style-type:none;}
+#spotify{filter: drop-shadow(5px 5px 1px #17a2b8);}
+.projectinhoud span{font-weight: bold;}
 
