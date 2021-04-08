@@ -5,37 +5,29 @@ body{
     padding: 0;
     width: 100% !important;
 }
-
 iframe, img {
     max-width: 100% !important;
 }
-
-
 html
 {
     margin: 0;
     padding: 0;
     width: 100% !important;
 }
-
 h1{
     margin-top: 15%;
     font-size: xxx-large;
 }
-
 .banner .btn{
     font-size: 20px;
 }
-
 .banner{
     width: 100%;
 }
-
 #profilepic{
     max-width: 100%;
     filter: drop-shadow(0px 20px 0px #17a2b8);
 }
-
 @media (min-width:768px)
 {
     #profilepic
@@ -43,11 +35,9 @@ h1{
         filter: drop-shadow(20px 20px 0px #17a2b8);
     }
 }
-
 .navigation, .grid{
     justify-content: space-between;
 }
-
 .navigation button{
     margin: 1px;
     width: 100%;
@@ -56,21 +46,17 @@ h1{
     background-color: none;
     color: #17a2b8;
 }
-
 .navigation button:hover{
     color: #fff;
     background-color: #17a2b8;
 }
-
 .grid div img{
     margin: 2px;
 }
-
 i{
     color: #e6bc53;
     font-weight: bolder;
 }
-
 .contact li, .contact li a {
     text-decoration: none;
     color: black;
@@ -78,50 +64,36 @@ i{
     list-style-image: none;
     list-style-type: none;
 }
-
 .goog-logo-link {
     display:none !important;
 } 
-    
 .goog-te-gadget{
     color: transparent !important;
     font-size: 45px !important;
     width: 80px !important;
     height: 80px !important;
 }
-
 .titlegrootte{
     color: #17a2b8;
     font-size: 25px;
 }
-
 .titlegrootte:hover{
     color: #17a2b8;
     font-size: 25px;
 }
-
 .card-header{
     background-color: white;
 }
-
 .card:hover{
     border: #17a2b8 1px solid;
-    /* background-color: #e6bc53; */
 }
-
-/* .card-body i{
-    color: #17a2b8;
-} */
-
 .collapse a{
     color: black;
 }
-
 .alert-warning{
     background-color: #e6bc53;
     color: black;
 }
-
 footer {
     position: absolute;
     width: 100% !important;
@@ -129,7 +101,6 @@ footer {
     bottom: 0;
     overflow: hidden;
   }
-
  .goog-te-banner-frame {display:none;}
  #goog-gt-tt {display:none!important;visibility:hidden!important;}
 
@@ -140,11 +111,9 @@ footer {
   font-family: Roboto, 'Open Sans', sans-serif!important;
   text-transform: uppercase;
 }
-
 .intro{
     list-style-type:none;
 }
-
 .goog-te-gadget-simple  {
   background-color: rgba(255,255,255,0.20)!important;
   border: 1px solid rgba(255,255,255,0.50) !important;
@@ -169,7 +138,6 @@ footer {
   border:none!important;
   font-family: 'Material Icons';  
 }
-
 .goog-te-gadget-icon {
     background-image: url(https://placehold.it/32)!important;
     background-position: 0px 0px;
@@ -178,7 +146,6 @@ footer {
     margin-right: 8px!important;
     display: none;
 }
-
 .goog-te-banner-frame.skiptranslate {display: none!important;} 
 body {top: 0px!important;}
 @media (max-width: 667px) {
@@ -198,11 +165,9 @@ body {top: 0px!important;}
         text-align: center;
     }	
 }
-
 #spotify{
     filter: drop-shadow(5px 5px 1px #17a2b8);
 }
-
 .projectinhoud span{
     font-weight: bold;
 }
