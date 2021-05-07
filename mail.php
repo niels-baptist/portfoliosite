@@ -30,90 +30,78 @@
         <div class="col-sm-12 col-md-8">
           <h1 class="p-5 p-sm-2">Hi! I'm <span class="text-info">Niels Baptist</span>
             <h2 class="text-secondary pl-2"> This is my portfolio</h2>
-            <br>
-            <div class="d-block m-auto" id="google_translate_element"></div>
           </h1>
         </div>
       </div>
     </div>
 
     <!-- nav pills -->
-    <div class="container mt-2 mb-2">
-        <div class="row navigation text-center rounded">
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <a href="index.html" class="btn"><i class="fas fa-backward"></i> Back to start</i></a>
-         </div>
+    <div class="container mt-5 mb-5">
+        <div class="row navigation text-center rounded mb-4">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <a href="index.html" class="btn"><i class="fas fa-backward"></i> Back to start</i></a>
+            </div>
         </div>
-    </div>
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-require './vendor/autoload.php';
-    $mail = new PHPMailer(true);
-    try {
-        //Server settings
-        $mail->SMTPDebug = 0;                      
-        $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.gmail.com';                     
-        $mail->SMTPAuth   =  true;                                 
-        $mail->Username   = '6a13ib@gmail.com';                    
-        $mail->Password   = '$3fhz@tVcH2J##oV!R8wxU%ZHigL';                           
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
-        $mail->Port       = 587;                                  
+        <?php
+        use PHPMailer\PHPMailer\PHPMailer;
+        use PHPMailer\PHPMailer\SMTP;
+        use PHPMailer\PHPMailer\Exception;
+        require './vendor/autoload.php';
+            $mail = new PHPMailer(true);
+            try {
+                //Server settings
+                $mail->SMTPDebug = 0;                      
+                $mail->isSMTP();                                            
+                $mail->Host       = 'smtp.gmail.com';                     
+                $mail->SMTPAuth   =  true;                                 
+                $mail->Username   = '6a13ib@gmail.com';                    
+                $mail->Password   = 'Qz&S8R%8LZGQ%FwZN7uK4*CjDJ';                           
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
+                $mail->Port       = 587;                                  
 
-        //Recipients
-        $mail->setFrom('6a13ib@gmail.com', 'Portfolio contact');
-        $mail->addAddress('nielsbaptist01@gmail.com', 'sinners portfolio contact'); 
+                //Recipients
+                $mail->setFrom('6a13ib@gmail.com', 'Portfolio contact');
+                $mail->addAddress('nielsbaptist01@gmail.com', 'sinners portfolio contact'); 
 
-        //Content
-        $mail->isHTML(true);
-        $firstname = $_GET['firstname'];
-        $surname = $_GET['surname'];
-        $email = $_GET['mail'];
-        $message = $_GET['message'];
-        if(!is_null($firstname && !is_null($surname) && !is_null($firstname) && !is_null($message))){
-          $mail->Subject = 'Contact from ' . $firstname . ' ' . $surname;
-          $mail->Body    = 'Naam: ' . $firstname . ' ' . $surname . '</br>' . 'Boodschap: ' .  $message;
-          $mail->send();
-          echo '<div class="container">';
-              echo '<div class="row">';
-                  echo '<div class="col-12">';
-                      echo '<p class="alert alert-info">Thanks for your message! I will get back to you as soon as possible.</p>';
+                //Content
+                $mail->isHTML(true);
+                $firstname = $_GET['firstname'];
+                $surname = $_GET['surname'];
+                $email = $_GET['mail'];
+                $message = $_GET['message'];
+                if(!is_null($firstname && !is_null($surname) && !is_null($firstname) && !is_null($message))){
+                  $mail->Subject = 'Contact from ' . $firstname . ' ' . $surname;
+                  $mail->Body    = 'Naam: ' . $firstname . ' ' . $surname . '</br>' . 'Boodschap: ' .  $message;
+                  $mail->send();
+                  echo '<div class="container">';
+                      echo '<div class="row">';
+                          echo '<div class="col-12">';
+                              echo '<p class="alert alert-info mb-5">Thanks for your message! I will get back to you as soon as possible.</p>';
+                          echo '</div>';
+                      echo '</div>';
                   echo '</div>';
-              echo '</div>';
-          echo '</div>';
-         } 
-         else{
-          echo '<p class="alert alert-danger">Whoops! Seems like something went wrong, your message did not come thru. I will try my best to fix this as soon as possible!</p>';
+                } 
+                else{
+                  echo '<p class="alert alert-danger mb-5">Mind to fill in all fields before sending the form!</p>';
 
-         }
-        }
-        catch (Exception $e){
-            echo '<p class="alert alert-danger">Whoops! Seems like something went wrong, your message did not come thru. I will try my best to fix this as soon as possible!</p>';
-        }
-    ?>
+                }
+                }
+                catch (Exception $e){
+                  echo $e;
+                    echo '<p class="alert alert-danger mb-5">Whoops! Seems like something went wrong, your message did not come thru. I will try my best to fix this as soon as possible!</p>';
+                }
+            ?>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <p class="p-5 m-5"></p>
 
     <!-- footer -->
-    <footer class="footer" width="100%">
+    <footer class="footer mt-5 w-100 h-100">
       <svg class="w-100" viewBox="0 -20 700 100" width="100%" height="110" preserveAspectRatio="none">
         <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#e6bc53" />
         <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#17a2b8" />
       </svg>
-    </footer>
-
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-      }
-    </script>  
+    </footer>  
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
