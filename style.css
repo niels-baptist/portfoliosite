@@ -1,25 +1,42 @@
-body{font-family: 'Poppins', sans-serif;overflow-x: hidden;}
-html, body{margin: 0;padding: 0;width: 100% !important;}
-iframe, img {max-width: 100% !important;}
-h1{margin-top: 15%;font-size: xxx-large;}
-.banner .btn{font-size: 20px;}
-.banner{width: 100%;}
-#profilepic{max-width: 100%;filter: drop-shadow(0px 20px 0px #17a2b8);} 
-@media (min-width:768px){#profilepic{filter: drop-shadow(20px 20px 0px #17a2b8);}}
-.navigation, .grid{justify-content: space-between;}
-.navigation button{margin: 1px;width: 100%;font-size: 20px;border-radius: 5px;background-color: none;color: #17a2b8;}
-.navigation button:hover{color: #fff;background-color: #17a2b8;}
-.grid div img{margin: 2px;}
-i{color: #e6bc53;font-weight: bolder;}
-.contact li, .contact li a {text-decoration: none;color: black;font-size: 20px;list-style-image: none;list-style-type: none;}
-.titlegrootte{color: #17a2b8;font-size: 25px;}
-.titlegrootte:hover{color: #17a2b8;font-size: 25px;}
-.card-header{background-color: white;}
-.card:hover{border: #17a2b8 1px solid;}
-.collapse a{color: black;}
-.alert-warning{background-color: #e6bc53;color: black;}
-footer {position: relative;width: 100% !important;height: 100px;bottom: 0px;overflow: hidden;margin-top: 100px;}
-.intro{list-style-type:none;}
-#spotify{filter: drop-shadow(5px 5px 1px #17a2b8);}
-.projectinhoud span{font-weight: bold;}
-#BtnProjectsB, #BtnResumeA{cursor: pointer;}
+*{
+    font-family: 'Karla', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title1, .title2{
+    font-size: 50px;
+}
+
+form, .title2{
+    color: white;
+}
+
+i{
+    color: #0F5085;
+    font-size: x-large;
+}
+
+.blue{
+    color: #0F5085;
+}
+
+.first_parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.second_parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0F5085;
+}
