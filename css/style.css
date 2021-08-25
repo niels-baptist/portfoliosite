@@ -14,6 +14,16 @@ form, .title2{
     color: white;
 }
 
+.rotate{
+    transform: rotate(180deg);
+    margin: 0;
+    padding: 0;
+}
+
+.white{
+    color: #fff;
+}
+
 i{
     color: #0F5085;
     font-size: x-large;
@@ -23,20 +33,30 @@ i{
     color: #0F5085;
 }
 
-.first_parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-}
-.second_parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
+
+.backBlue{
     background-color: #0F5085;
+}
+
+.backWhite{
+    background-color: #fff;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.rounded{
+    border-radius: 20px;
+    filter: grayscale();
+}
+
+.rounded:hover{
+    border-radius: 25px;
+    filter: grayscale(0);
 }
