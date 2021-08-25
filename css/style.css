@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.bold{
+    font-weight: bolder;
+}
+
 .title1, .title2{
     font-size: 50px;
 }
