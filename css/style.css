@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Karla', sans-serif;
 }
 
@@ -40,6 +42,8 @@ i{
 
 .backBlue{
     background-color: #0F5085;
+    margin: 0;
+    padding: 0;
 }
 
 .backWhite{
@@ -57,10 +61,10 @@ i{
 
 .rounded{
     border-radius: 20px;
-    filter: grayscale();
+    /* filter: grayscale(); */
 }
 
 .rounded:hover{
     border-radius: 25px;
-    filter: grayscale(0);
+    /* filter: grayscale(0); */
 }
