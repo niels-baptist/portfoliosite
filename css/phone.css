@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title1, .title2{
+    font-size: 50px;
+}
+
+form, .title2{
+    color: white;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.white{
+    color: #fff;
+}
+
+i{
+    color: #0F5085;
+    font-size: x-large;
+}
+
+.blue{
+    color: #0F5085;
+}
+
+
+.backBlue{
+    background-color: #0F5085;
+    margin-top: -20px;
+}
+
+.backWhite{
+    background-color: #fff;
+    margin-top: -20px;
+}
+.bold{
+    font-weight: bolder;
+}
+
+.arrow{
+    display: none;
+    visibility: hidden;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.marginbottom{
+    margin-bottom: 500px;
+}
+.margintop
+{
+    margin-top: 200px;
+}

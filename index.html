@@ -3,7 +3,8 @@
 <head>
     <title>Portfolio - Niels Baptist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/style.css">
     <link rel="stylesheet" href="./css/waves.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,11 +24,11 @@
                     </div>
                     <div class="col-lg-8 col-md-12 m-auto">
                         <h1 class="title1">Hi there! <br> I'm <span class="blue">Niels Baptist</span></h1>
-                        <h2 class="text-muted m-auto">Functional Analist</h2>
+                        <h2 class="text-muted m-auto">Artificial Intelligence Engineer</h2>
                         <br>
                     </div>
                 </div>
-                <div class="row m-auto p-5 m-5">
+                <div class="row m-auto p-5 m-5 arrow">
                     <a href="#skills">
                         <i class="fas fa-arrow-circle-down"></i>
                     </a>
@@ -40,7 +41,7 @@
     <img id="skills" src="./img/top2.svg" class="rotate" alt="Top Wave">
     <div class="backBlue">
         <div class="parent">
-            <div class="container">
+            <div class="container margintop pb-sm-5">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="title2 p-5">My skills</h2>
@@ -72,35 +73,29 @@
                         </p>
                     </div>
                 </div>
+                <div class="row m-auto p-5 m-5 arrow">
+                    <a href="#aboutMe">
+                        <i class="fas fa-arrow-circle-down white"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <img src="./img/bottom1.svg" alt="Bottom wave">
-    
+
+
+
+    <img class="marginbottom" src="./img/bottom1.svg" alt="Bottom wave" id="aboutMe">
     <!-- about me -->
-    <div class="backWhite">
+    <div class="backWhite marginbottom margintop">
         <div class="parent">
             <div class="container">
                 <div class="row">
-                    <p class="p-5 m-5"></p>
-                  </div>
-                  <div class="row">
-                    <p class="p-5 m-5"></p>
-                  </div>
-
-                  <div class="row">
-                    <p class="p-5 m-5"></p>
-                  </div>
-                  <div class="row">
-                    <p class="p-5 m-5"></p>
-                  </div>
-                <div class="row">
-                    <h2 class="p-5 title1">About me</h2>
+                    <h2 class="pl-sm-0 pr-sm-0 p-lg-5 title1">About me</h2>
                 </div>
                 <!-- drums -->
                 <div class="row m-auto">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img class="w-100 rounded p-3" src="./img/drum.jpg" alt="">
+                        <img class="w-100 rounded p-3" src="./img/drum.jpg" alt="Drum kit">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                         <br>
@@ -114,7 +109,7 @@
                 <!-- running -->
                 <div class="row m-auto">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img class="w-100 rounded p-3" src="./img/track.jpeg" alt="">
+                        <img class="w-100 rounded p-3" src="./img/track.jpeg" alt="Running track">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                         <br>
@@ -126,9 +121,9 @@
                     </div>
                 </div>
                 <!-- running -->
-                <div class="row m-auto">
+                <div class="row m-auto mb-5">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img class="w-100 rounded p-3" src="./img/dashboard.jpg" alt="">
+                        <img class="w-100 rounded p-3" src="./img/dashboard.jpg" alt="Vaccination dashboard">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 p-5">
                         <br>
@@ -138,29 +133,22 @@
                            That's why i like to visualize and analyse different types of data sets.
                         </p>
                     </div>
-                    <div class="row">
-                        <p class="p-5 m-5"></p>
-                    </div>
-                    <div class="row">
-                        <p class="p-5 m-5"></p>
-                      </div>
+                </div>
+                <div class="row m-auto p-5 m-5 arrow">
+                    <a href="#getintouch">
+                        <i class="fas fa-arrow-circle-down"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <p style="padding: 20%;"></p>
-        </div>
-    </div>
-
-    <img class="rotate" src="./img/bottom1.svg" alt="bottom wave">
+    <img src="./img/top2.svg" class="rotate" alt="Top Wave" id="getintouch">
     <!-- contact -->
     <div class="backBlue">
         <div id="second" class="parent">
-            <div class="container w-50">
-                <h2 class="title2 p-5">Let's get in touch! </h2>
+            <div class="container w-sm-100 w-lg-50">
+                <h2 class="title2 p-sm-0 p-lg-5">Let's get in touch! </h2>
                 <form action="mail.php" method="POST">                
                     <div class="form-group">
                         <label for="email">Email</label>
