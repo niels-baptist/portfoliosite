@@ -4,5 +4,4 @@ I made an html/css/js/php portfolio website as an Applied Computer Sciences stud
 ## Used libraries
 - [Google fonts](https://fonts.google.com)
 - [Fontawesome](https://www.fontawesome.com)
-- [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 - [Bootstrap](https://getbootstrap.com)
