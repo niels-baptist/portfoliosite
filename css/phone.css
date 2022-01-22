@@ -8,6 +8,43 @@ html {
     scroll-behavior: smooth;
 }
 
+.nostylingtext{
+    text-decoration: none;
+    text-transform: none;
+    text-align: auto;
+    color: black;
+}
+
+.btn-blue{
+    background-color: #0F5085;
+    color: #fff;
+}
+
+.btn-php{
+    background-color: #808bb6;
+    color: #000;
+}
+
+.btn-python{
+    background-color: #3477ad;
+    color: #ffd947;
+}
+
+.btn-mysql{
+    background-color: #d88700;
+    color: #005c83;
+}
+
+.btn-dark{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-ai{
+    background-color: #f9fafb;
+    color: #f783ac;
+}
+
 .title1, .title2{
     font-size: 50px;
 }
