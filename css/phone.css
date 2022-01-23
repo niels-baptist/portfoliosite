@@ -115,3 +115,18 @@ i{
     justify-content: center;
     text-align: center;
 }
+
+.appear-animation{
+    /* An animation that makes a div fade in */
+    animation: appear-animation 2s;
+}
+
+@keyframes appear-animation {
+    /* The animation */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
