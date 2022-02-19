@@ -45,6 +45,11 @@ html {
     color: #f783ac;
 }
 
+.btn-postgresql{
+    background-color: #336791;
+    color: #fff;
+}
+
 .title1, .title2{
     font-size: 50px;
 }
@@ -106,6 +111,12 @@ i{
 {
     width: 100%;
     height: 300vh;
+}
+
+.tripleheight
+{
+    width: 100%;
+    height: 325vh;
 }
 
 .centeredbothways
