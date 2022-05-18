@@ -116,7 +116,7 @@ i{
 .tripleheight
 {
     width: 100%;
-    height: 325vh;
+    height: 400vh;
 }
 
 .centeredbothways
@@ -140,4 +140,9 @@ i{
     to {
         opacity: 1;
     }
+}
+
+.spacer{
+    padding-top: 500px;
+    padding-bottom: 500px;
 }

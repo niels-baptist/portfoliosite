@@ -10,8 +10,16 @@
     visibility: visible;
 }
 
-.doubleheight
-{
+.doubleheight{
     width: 100%;
     height: 200vh;
+}
+
+.tripleheight{
+    width: 100%;
+    height: 325vh;
+}
+
+.spacer{
+    padding: 0px;
 }
