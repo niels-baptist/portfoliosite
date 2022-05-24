@@ -146,3 +146,8 @@ i{
     padding-top: 500px;
     padding-bottom: 500px;
 }
+
+.text-green{
+    color: #0F5085;
+    font-weight: bold;
+}

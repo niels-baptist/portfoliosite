@@ -35,6 +35,15 @@
     background: #5dfc71;
     width: 0%;
     }
+
+    .text-green{
+        color: #00d26a;
+        font-weight: bold;
+    }
+
+    .row{
+        padding-top: 30px;
+    }
 </style>
 <body style="color: #0e2349; ">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5dfc71" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,181.3C384,181,480,139,576,154.7C672,171,768,245,864,245.3C960,245,1056,171,1152,165.3C1248,160,1344,224,1392,256L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>    <div class="container">
@@ -43,7 +52,7 @@
             <div class="progress-bar" id="myBar"></div>
         </div>
     </div>
-    <div class="container">
+    <div id="top" class="container">
         <div class="row">
             <div class="col-12">
                 <a class="nostylingtext text-dark text-decoration-none" href="./index.html">🔙 Back</a>
@@ -59,7 +68,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="pt-3 pb-3">1. Why VRT?</h2>
+                <h2 class="pt-3 pb-3">1. Why VRT❔</h2>
                 <p>As a fan of sports and media, VRT has always been a part of our living room at home, whether its 
                     watching the news or a football game. I am a huge fan of the Sporza and VRT NWS mobile and web applications
                     and have used them on a daily basis for quite while already. Furthermore, I really looked for a large company
@@ -76,7 +85,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.1 Business case</h3>
+                <h3 class="pt-2 pb-2">2.1 Business case 🧑‍💼</h3>
             </div>
         </div>
         <div class="row">
@@ -88,23 +97,59 @@
                     therefore; if we had a way of knowing what kind of pageviews and lifecycle we would get from the articles; 
                     before we published them. 
                 </p>
+                <p>
+                    The moment a journalist is publishing an article, it is useful to know how the article will perform,
+                    so that both the recommendation engine has extra input to work with as a reference, and the journalist
+                    can make the most of the article concerning updates & follow-up. They will for example invest more time in
+                    providing updates for an article with a very high expected number of views. And they could for example decide to
+                    include or not include a video in the article depending on the predictions made before publishing.
+                </p>
+                <p>
+                    The redaction teams at VRT NWS and Sporza also have control over the contents of the home page, and it is possible that
+                    if they feel that the homepage layout decisions will be influenced by the number of expected pageviews and duration
+                    of people reading it. It could therefore be useful to have a way of knowing what articles will be performing like, so
+                    that they have an extra metric of deciding what to include or not.
+                </p>
+                <p>
+                    There has not been much research into the influencers of pageviews and the article lifecycle yet, and the people working
+                    with this data are geniunly curious as to what things impact views and lifecycles of articles in what ways. It is therefore
+                    a plus if they can get more insight into this data, because the things they learn from it can be applied to various
+                    future projects which lean in the direction of improving the user experience and recommending the right articles at the right time.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.1 Technical assignment</h3>
+                <h3 class="pt-2 pb-2">2.1 Technical assignment ⚙️</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p>There are 2 main aspects of the technical assignment:</p>
+                <p>There are 2 main aspects of the technical assignment: One is focused around analytics and 
+                    <span class="text-green">Business Intelligence</span>,
+                    the main goal here is to start from raw data and manufacture it into a format that allows me to create
+                    visualisations and dashboards which can be used to share valuable insights to the business.
+                    The other aspect of this assignment is focused around <span class="text-green">Data Science</span>, 
+                    where I will use the analytical data
+                    as a basis for creating training data that will allow me to create machine learning models. These models will
+                    be used to predict the expected performance of articles. With performance in thiss case, I mean the number of pageviews
+                    that an article is expected to get, and the time it will take to reach a number of views. My colleagues and I decided to choose
+                    the point where 90% of pageviews have been reached as the end of our lifecycle, so the time between publishing and
+                    reaching this point (expressed in hours) is what the machine learning model is going to predict. 
+                </p>
+                <p>In short, my technical assignment goes as follows:</p>
                 <ul>
-                    <li>Research and visualise the key influencers of an article its lifecycle.</li>
+                    <li>
+                        <span class="text-green">Business intelligence</span>: 
+                        Research and visualise the key influencers of an article its total pageviews and lifecycle.</li>
                     <ul>
+                        <li>Manipulate data and join the right columns to get useful data</li>
                         <li>Visualise data using Business Intelligence tools</li>
                         <li>Present insights to stakeholders</li>
                     </ul>
-                    <li>Make a predictive model to predict the expected article lifecycle.</li>
+                    <li>
+                        <span class="text-green">Data Science</span>: 
+                        Make a predictive model to predict the expected article lifecycle.</li>
                     <ul>
                         <li>Use a machine learning algorithm predict the total expected pageviews</li>
                         <li>Predict the duration of how long it will take for an article to reach 90%
@@ -116,8 +161,30 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.3 Planning</h3>
+                <h3 class="pt-2 pb-2">2.3 Planning ⌚</h3>
             </div>
+        </div>
+        <div class="row">
+            <p>As with any project, we want to keep a timeline of what we're going to do. I made this planning to keep track of my progress and
+               to visualise when I decided to take on certain aspects of the project. There are 2 important things to note when looking at my
+               project planning: 
+            </p>
+            <ul>
+                <li>I was generous when deciding how long it would take me to get settled completely
+                    <ul>
+                        <li><span class="text-green">Reasoning</span>: Since I am working with completely new data, in a team that is new to me,
+                        I figured it would be beneficial not to rush the start and get on one page with everyone on what my best strategy would be.</li>
+                    </ul>
+                </li>
+                <li>The last column of my planning spans longer than the other ones
+                    <ul>
+                        <li><span class="text-green">Reasoning</span>: As you first start on a project, it is difficult to predict the way in
+                        which things will work out months later. So I decided to not go into too much detail about the last few weeks few weeks
+                        of my internship, and rather make one that allows for more flexibility.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="row">
             <div class="col-12">
@@ -126,7 +193,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.4 Risk assessment</h3>
+                <h3 class="pt-2 pb-2">2.4 Risk assessment❕</h3>
             </div>
         </div>
         <div class="row">
@@ -140,15 +207,20 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.5 Information gathering & reporting</h3>
+                <h3 class="pt-2 pb-2">2.5 Information gathering & reporting 📃</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <p>For a good internship, it is necessary to maintain good communication with the team you are working in, so I am lucky to be involved in the daily stand-up meetings. In this unit, we work with Jira using kanban, which gives more flexibility in terms of timing compared to the traditional scrum methodology.
                     Apart from these daily stand-up meetings, there are weekly alignment meetings on Monday between the different profiles within the team. On Thursday, there is a knowledge sharing meeting between the people of data science and on Wednesday, the planning of the data science profiles is reviewed. In this way, myself and the rest of the team are always well informed of each other.
-                    To keep my supervisor informed of my progress at the internship, I will e-mail a weekly report to both my supervisor and my internship supervisor. In this I place an overview of what I worked on last week, supplemented by a paragraph in which I express myself about my experiences at my internship.
-                    </p>
+                    To keep my supervisor informed of my progress at the internship, I will e-mail a weekly report to both my internship mentor at Thomas More and my internship supervisor at VRT. In this I place an overview of what I worked on last week, supplemented by a paragraph in which I express myself about my experiences at my internship.
+                </p>
+                <p>
+                    After my internship finishes, I won't be there to explain my findings to the team. That's why I made sure that the work i did is well documented and the right people have access to it. I made a <a class="bold" href="">technical internship report</a> (14 pages), containing the semantic explanation
+                    of my reasoning while writing my code solution. I made sure to keep good track of my files in a well-structured <a href="https://github.com/niels-baptist/VRT_internship">Github repository</a>, containing different subfolders and different Readme files for each of the 4 'subtask' of the project I have worked on. Inside of this repo I made sure to link 
+                    my documents as well.
+                </p>
             </div>
         </div>
         <div class="row">
@@ -158,7 +230,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">3.1 Business intelligence</h3>
+                <h3 class="pt-2 pb-2">3.1 Business intelligence 📈</h3>
             </div>
         </div>
         <div class="row">
@@ -180,7 +252,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">3.2 Machine learning</h3>
+                <h3 class="pt-2 pb-2">3.2 Machine learning 🧠</h3>
             </div>
         </div>
         <div class="row">
@@ -197,18 +269,18 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <p>The final goal that my internship assignment should serve is to deliver a model that can make predictions about the expected pageviews. The strategy used by me to achieve this is as follows: through a web application, an editor enters the parameters of an article on a form (title length, presence of video, ...). The trained model then gives a guess of how many views it thinks the article will achieve. Immediately after that, it uses that prediction to make a guess of how long it would take to reach that number of views, expressed in hours, it then gives this back to the user, who is presented with it on a nice web page.
+                <p>The final goal that my internship assignment should serve is to deliver a model that can make predictions about the expected pageviews. The strategy used by me to achieve this is as follows: through a web application, an editor enters the parameters of an article on a form (title length, presence of video, Article type, etc). The trained model then gives a guess of how many views it thinks the article will achieve. Immediately after that, it uses that prediction to make a guess of how long it would take to reach that number of views, expressed in hours, it then gives this back to the user, who is presented with it on a nice web page.
                     I personally chose to add this last step to the process, because it turns the abstract idea of a Jupyter Notebook into a practical example that is much more relevant and demonstrative to show to the average end user.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <img class="d-block m-auto w-75 p-4" src="./img/predictor.gif" alt="">
+                <img class="d-block m-auto w-75 p-4" src="./img/predictor.gif" alt="GIF of predictions being made">
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">3.2 Impact on VRT</h3>
+                <h3 class="pt-2 pb-2">3.2 Impact on VRT 🏢</h3>
             </div>
         </div>
         <div class="row">
@@ -218,7 +290,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="pt-3 pb-3">4. Personal reflection</h3>
+                <h2 class="pt-3 pb-3">4. Personal reflection 🤔</h3>
             </div>
         </div>
         <div class="row">
@@ -237,8 +309,23 @@
                 </ul>
                 <p>Some of the challenges I personally faced:</p>
                 <ul>
-                    <li>Work in an orderly fashion: it's easy to lose track of what you're doing when you have dozens of operations in different notebooks for multiple purposes.</li>
-                    <li>Theoretical understanding: when discussing a specific algorithm or data-manipulation technique, I often noticed that, as a professional bachelor student, I could not quite follow what the colleagues (who often have an academic bachelor's degree as well as experience) exactly meant.</li>
+                    <li>
+                        Work in an orderly fashion: it's easy to lose track of what you're doing when you have dozens of operations in different notebooks for multiple purposes.
+                    </li>
+                    <ul>
+                        <li>
+                            <span class="text-green">✅ Solution</span>: I made sure to keep my notebooks orered in seperate folders with clear names and a number describing the order in which the 
+                            notebook is supposed to be executed when going throught the data flow.
+                        </li>
+                    </ul>
+                    <li>
+                        Theoretical understanding: when discussing a specific algorithm or data-manipulation technique, I often noticed that, as a professional bachelor student, I could not quite follow what the colleagues (who often have an academic bachelor's degree as well as experience) exactly meant.
+                    </li>
+                    <ul>
+                        <li><span class="text-green">✅ Solution</span>: I spent a bunch of time researching the the theory behind certain algorhytms and consulted my colleagues if I needed help understanding something.
+                        </li>
+                    </ul>
+                    </li>
                 </ul>
                 <p>In the team I was allowed to work in, Data & Intelligence, more specifically the Data Platform, I was well surrounded by a collection of external consultants (Brainjar, Datashift, Dataroots) and internal staff (VRT). I participated in daily stand-up meetings, weekly Data Science knowledge-sharing sessions and alignment meetings. Monthly, I was part of the Data & Intelligence (D&I) meeting and participated in the team retrospective. I participated in team building activities (football) and departmental keynotes. Whenever I had questions or needed advice, I could always reach out to my colleagues who were happy to help me and push me in the right direction. My colleagues were interested in the internship assignment and regularly asked of their own accord how things were going.
                     In addition, I chose an internship in the capital, my first interaction with a big city. Even though most days, 3 to 4 per week, were spent working from home, I spent some time gazing at the busy streets while riding my folding bike through Schaarbeek. Apart from my internship hours, I also took the time to soak up the atmosphere and see the local sights. 
@@ -247,7 +334,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="pt-3 pb-3">5. Conclusion</h2>
+                <h2 class="pt-3 pb-3">5. Conclusion ✅</h2>
             </div>
         </div>
         <div class="ro<">
@@ -262,6 +349,9 @@
             <div class="col-sm-12 col-md-6 d-block m-auto">
                 <img class="d-block m-auto p-3 w-50" src="./img/tm.png" alt="Thomas More logo">
             </div>
+        </div>
+        <div class="row m-5 p-5">
+            <a class="text-decoration-none text-green" href="#top">🔝 To the top</a>
         </div>
     </div>
 </div>
