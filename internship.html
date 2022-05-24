@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="pt-3 pb-3">1. Why VRT?</h2>
-                <p>As a fan of sports and media, VRT has always been a part of our living room at home, wether its 
+                <p>As a fan of sports and media, VRT has always been a part of our living room at home, whether its 
                     watching the news or a football game. I am a huge fan of the Sporza and VRT NWS mobile and web applications
                     and have used them on a daily basis for quite while already. Furthermore, I really looked for a large company
                     to do my internship at, because I did not have any experience working in one and believed it would be a great
@@ -85,7 +85,7 @@
                     differ from each other greatly in many ways. For example, the articles are not always about the same topic,
                     they can be about sports, entertainment, politics, or even about the weather. The articles are also not always
                     written by the same journalist, and the length of the articles can be greatly different. It would be useful 
-                    therefore, if we had a way of knowing what kind of pageviews and lifecycle we would get from the articles, 
+                    therefore; if we had a way of knowing what kind of pageviews and lifecycle we would get from the articles; 
                     before we published them. 
                 </p>
             </div>
@@ -126,7 +126,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h3 class="pt-2 pb-2">2.4 Risk assessement</h3>
+                <h3 class="pt-2 pb-2">2.4 Risk assessment</h3>
             </div>
         </div>
         <div class="row">
@@ -134,7 +134,7 @@
                 <ul>
                     <li>Since we are working in Amazon Web Services, a trusted platform known for its sometimes astronomical hosting costs, we will have to use the available resources wisely in order to avoid wastage. </li>
                     <li>To avoid data loss, it is important to work with the right privilege set and pay extra attention to the environment in which you work.</li>
-                    <li>There is a learning curve when it comes to using PySpark and AWS, because we never worked with them in school. So when I'm stuck with something, it's important not to wait too long before asking for help, so as not to lose any precious time.</li>
+                    <li>There is a learning curve when it comes to using PySpark and AWS, because we never worked with them in school. If I'm stuck with something, it's important not to wait too long before asking for help, so as not to lose any precious time.</li>
                 </ul>
             </div>
         </div>
@@ -163,14 +163,14 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <p>A large part of my internship consisted of data analysis. In order to present my findings to the staff of the VRT NWS and Sporza editors, I built a Power BI dashboard with the most important insights, so that I could process these visualisations in a PowerPoint presentation. </p>
+                <p>A large part of my internship consisted of data analysis. To present my findings to the staff of the VRT NWS and Sporza editors, I built a Power BI dashboard with the most important insights, so that I could process these visualisations in a PowerPoint presentation. </p>
                 <p>The data I needed to create my visualisations was pulled in from Amazon S3, and then heavily transformed in Jupyter notebooks on Amazon Sagemaker before loading it into power BI. Some of the main edits I made: </p>
                 <ul>
                     <li>Classes: Different categories added according to percentile values for key columns</li>
                     <li>Total & achieved pageviews: Performed calculations to determine the total and current (cumulative sum) number of readers reached for articles. To do this, I merged the article data provided to me with the corresponding Adobe Experience Manager data that monitors readers. </li>
                     <li>Hours until 90% pageviews: Cutoff percentage set to call an article 'mature' (=90% of all reads achieved), calculations made to express in hours for each article how long it takes to get to this point.</li>
                 </ul>
-                <p>Below i posted an image of the first tab of the dashboard:</p>
+                <p>Below is image of the first tab of the dashboard:</p>
             </div>
         </div>
         <div class="row">
@@ -185,14 +185,14 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <p>In order to obtain the right data to use for predictions, I use the same notebook as for the data pre-processing in the Business Intelligence section, with the difference that I do label encoding and logarithmic scaling. Label encoding ensures that all categorical values are converted to numerical labels, while logarithmic scaling ensures that the very large and very small views are pushed closer together.</p>
+                <p>To obtain the right data to use for predictions, I use the same notebook as for the data pre-processing in the Business Intelligence section, with the difference that I do label encoding and logarithmic scaling. Label encoding ensures that all categorical values are converted to numerical labels, while logarithmic scaling ensures that the very large and very small views are pushed closer together.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <p>After the training data was made ready to work with, I started looking at the different possibilities to make predictions. After a lot of experimentation, I decided to work with a Gradient Boosting Regressor from Scikit-Learn. I hereby split my data into a training and test with an 80/20 split before I start. When training my models, I use Grid Search with cross-validation from Scikit-Learn to get the ideal set of parameters for my training.
                     In total, I train both for VRT NWS and Sporza each 2 models in the same way, with 1 small difference: the first model 'model_total', I train with as input all the training values except the pageviews. The second model 'model_90', I train with the same input values, plus the column 'pageviews_total', which contains the total achieved pageviews of the article. 
-                    The reason why I approach it this way has to do with the way I work to make predictions. The idea is that an editor uses the model before the article is published to get a better overview of how the article will behave after it is published. It is therefore important that no data can be entered for the predictions in connection with the viewing figures, because we do not know these at the moment. The first model will therefore take the supplied article data, and make a prediction of the expected total ratings. The second model will then use the same data, supplemented with the expected total ratings, to make a prediction of the expected lifetime of an article, expressed in the number of hours it will take to reach 90% of the total ratings</p>
+                    The reason why I approach it this way has to do with the way I work to make predictions. The idea is that an editor uses the model before the article is published to get a better overview of how the article will behave after it is published. It is therefore important that no data can be entered for the predictions in connection with the viewing figures, because we do not know these at the moment. The first model will therefore take the supplied article data and make a prediction of the expected total ratings. The second model will then use the same data, supplemented with the expected total ratings, to make a prediction of the expected lifetime of an article, expressed in the number of hours it will take to reach 90% of the total ratings</p>
             </div>
         </div>
         <div class="row">
@@ -241,7 +241,7 @@
                     <li>Theoretical understanding: when discussing a specific algorithm or data-manipulation technique, I often noticed that, as a professional bachelor student, I could not quite follow what the colleagues (who often have an academic bachelor's degree as well as experience) exactly meant.</li>
                 </ul>
                 <p>In the team I was allowed to work in, Data & Intelligence, more specifically the Data Platform, I was well surrounded by a collection of external consultants (Brainjar, Datashift, Dataroots) and internal staff (VRT). I participated in daily stand-up meetings, weekly Data Science knowledge-sharing sessions and alignment meetings. Monthly, I was part of the Data & Intelligence (D&I) meeting and participated in the team retrospective. I participated in team building activities (football) and departmental keynotes. Whenever I had questions or needed advice, I could always reach out to my colleagues who were happy to help me and push me in the right direction. My colleagues were interested in the internship assignment and regularly asked of their own accord how things were going.
-                    In addition, I chose an internship in the capital, my first interaction with a big city, either on holiday days. Even though most days, 3 to 4 per week, were spent working from home, I often caught my open eyes on my folding bike through Brussels. Apart from my internship hours, I also took the time to soak up the atmosphere and see the local sights. 
+                    In addition, I chose an internship in the capital, my first interaction with a big city. Even though most days, 3 to 4 per week, were spent working from home, I spent some time gazing at the busy streets while riding my folding bike through Schaarbeek. Apart from my internship hours, I also took the time to soak up the atmosphere and see the local sights. 
                     I can look back on this internship with a positive feeling and say that I have learned a lot, both on a technical and on a personal level. This experience in the field has only confirmed and even strengthened my certainty of choosing the world of data. I would also like to thank everyone who has guided me and welcomed me, and whom I could count on whenever I had a problem.</p>
             </div>
         </div>
