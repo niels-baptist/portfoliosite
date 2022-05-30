@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/waves.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Website Tellus Consultancy</title>
+</head>
+<style>
+    /* Style the header: fixed position (always stay at the top) */
+    .progress-header {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+    }
+
+    /* The progress container (grey background) */
+    .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    }
+
+    /* The progress bar (scroll indicator) */
+    .progress-bar {
+    height: 8px;
+    background: #00cba9;
+    width: 0%;
+    }
+
+    .text-green{
+        color: #00cba9;
+        font-weight: bold;
+    }
+
+    .btn-accent{
+        background-color: #00cba9;
+        color: #000;
+    }
+
+    .row{
+        padding-top: 30px;
+    }
+
+    .nav{
+    background-color: #00cba9;
+    padding: 5px;
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-decoration: none;
+    }
+
+    .nav li a{
+        color: black;
+    }
+</style>
+<body style="color: #0e2349; ">
+    <div class="progress-header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <nav>
+    <ul class="nav sticky-top justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#top">Brief summary</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://tellus-consultancy.be" target="_blank">Visit</a>
+        </li>
+    </ul>
+    </nav>
+
+    <div id="top" class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <a class="text-dark text-decoration-none" href="./index.html"><i class="fa-solid fa-delete-left"></i> Back</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <h1 class="pt-5 pb-5">Tellus consultancy website</h1>
+            </div>
+        
+            <div class="col-sm-12 col-md-4">
+                <img class="w-50 d-block m-auto" src="./img/logo wapiti.png" alt="Wapiti logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Ever since the start of september 2020, I have been working as a self-employed student. I made a little
+                    firm called <a target="_blank" href="https://www.linkedin.com/company/wapitiservices">Wapiti</a> and
+                    started to work on websites and various IT applications. I made website for a dormitory, helped
+                    teachers with graphic illustrations and powerpoint presentations, and made python
+                    applications for a large solar energy company. I also made this web application, for a financial advisor
+                    who has a business called Tellus Consultancy.  I wanted to showcase this, because I know that this
+                    self-employed student venture has helped me to grow as a person and as a communicator, and because
+                    my client and I are proud of the way the website looks.
+                </p>
+                <a class="btn btn-accent" target="_blank" href="https://tellus-consultancy.be">Visit the website</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img class="w-100 p-2 rounded" src="./img/tellus1.jpg" alt="Tellus Consultancy website 1">
+            </div>
+            <div class="col-6">
+                <img class="w-100 p-2 rounded" src="./img/tellus2.jpg" alt="Tellus Consultancy website 1">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+        myFunction()};
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>

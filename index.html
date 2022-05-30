@@ -26,16 +26,19 @@
 <body>
     <ul class="nav sticky-top justify-content-center">
         <li class="nav-item">
+            <a class="nav-link" href="#top">Home</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="#aboutMe">About me</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#Realisations">Realisations</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#getintouch">Contact</a>
         </li>
     </ul>
-    <div class="backWhite parent">
+    <div id="top"  class="backWhite parent">
         <div class="container appear-animation">
             <div class="row w-75 mx-auto">
                 <div class="col-lg-4 col-md-12">
@@ -52,7 +55,7 @@
                 </div>
             </div>
             <div class="row m-auto p-5 m-5 arrow">
-                <a href="#skills">
+                <a href="#aboutMe">
                     <i class="fas fa-arrow-circle-down"></i>
                 </a>
             </div>
@@ -60,7 +63,7 @@
     </div>
 
     <!-- Skills -->
-    <img id="skills" src="./img/top2.svg" class="rotate" alt="Top Wave">
+    <img src="./img/top2.svg" class="rotate" alt="Top Wave">
 
 
     <div class="backBlue parent" id="aboutMe">
@@ -72,9 +75,13 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <a href="files/CV Niels.pdf" download="CV_Niels_Baptist" class="btn btn-light text-blue bold">
+                    <!-- <a href="files/CV Niels.pdf" download="CV_Niels_Baptist" class="btn btn-light text-blue bold">
                         <i class="fas fa-file-download"></i> 
                         <span class="bold">&nbsp;Download my resume</span>  
+                    </a> -->
+                    <a href="https://drive.google.com/file/d/1pyyjLAZQt4SIGWZHox7dx1t9Iv_XTh0-/view?usp=sharing" target="_blank" class="btn btn-light text-blue bold">
+                        <i class="fas fa-file"></i> 
+                        <span class="bold">&nbsp; View my resume</span>  
                     </a>
                 </div>
             </div>
@@ -89,16 +96,11 @@
                         learning new things as well as teaching new things to other people. I hope that I can
                         combine these interests in my working life and make a positive impact on the world.
                         <br><br>
-                        Make sure to check out some of the <a class="text-white" href="#projects">projects</a> 
+                        Make sure to check out some of the <a class="text-white" href="#Realisations">Realisations</a> 
                         I've worked on and <a class="text-white" href="#getintouch">contact me</a> if you have an interesting opportunity!
                         <br>
                     </p>
                 </div>
-            </div>
-            <div class="row m-auto p-5 m-5 arrow">
-                <a href="#aboutMe">
-                    <i class="fas fa-arrow-circle-down white"></i>
-                </a>
             </div>
         </div>
     </div>
@@ -154,10 +156,16 @@
                     <h3 class="p-3">Presentation</h3>
                     <p class="p-5">Designing and creating a solution is one thing, but <span class="text-blue bold">presenting</span> it in a transparent 
                         and fluent way that your client can understand is another. Throughout my education
-                        I have always enjoyed being able to explain and showcase my projects to a variety
+                        I have always enjoyed being able to explain and showcase my realisations to a variety
                         of audiences with different backgrounds.
                     </p>
                 </div>
+            </div>
+
+            <div class="row m-auto p-5 m-5 arrow">
+                <a href="#Realisations">
+                    <i class="fas fa-arrow-circle-down blue"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -168,49 +176,14 @@
     <!-- My projects -->
     <div class="backWhite parent tripleheight">
         <div class="container border-dark">
-            <p class="mb-5" id="projects"></p>
+            <p class="mb-5" id="Realisations"></p>
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="title1 p-5">Projects</h2>
+                    <h2 class="title1 p-5">Realisations</h2>
                 </div>
             </div>
             
             <div class="row" >
-                <!-- Project php -->
-                <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
-                    <div class="row centeredbothways">  
-                        <div class="col-sm-12 col-md-8">
-                            <h2 class="p-3">Ticket reservation system</h2>
-                            <p class="p-sm-1 p-lg-5">As a part of the PHP Project during the second fase of my education, I worked closely with
-                                a group of 4 other students to develop an online ticket reservation & management system for a local
-                                theater association based in Geel. The web application was developed using PHP laravel and MySQL.
-                            </p>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <a class="btn btn-light nostylingtext w-100 m-1" target="blank" href="https://dva.sinners.be"> 
-                                <i class="fab fa-chrome"></i><span>&nbsp; Visit</span> 
-                            </a>
-                            <a class="btn btn-light nostylingtext w-100 m-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                <i class="fab fa-github"></i><span>&nbsp;Github</span> 
-                            </a>
-                            <!-- used technologies -->
-                            <hr>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="btn btn-php nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                        <i class="fab fa-php"></i> <span>&nbsp;&nbsp;PHP</span> 
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="btn btn-mysql nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                        <i class="fas fa-database btn-mysql"></i> <span>&nbsp;&nbsp;MySQL</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-
                 <!-- project ai -->
                 <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
                     <div class="row centeredbothways">  
@@ -256,43 +229,17 @@
 
 
 
-                    <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
-                        <div class="row centeredbothways">  
-                            <div class="col-sm-12 col-md-8">
-                                <h2 class="p-3">API-to-CSV script</h2>
-                                <p class="p-sm-1 p-lg-5">While working as a self-employed student, I built a tool that periodically collects data from a public API
-                                    with changing API calls and timpestamped-saves it into a CSV file, where it will later be used to perform analytics in Power BI 
-                                    to eventually form a basis to make purchasing decisions on renewable energy. 
-                                </p>
-                            </div>
-                            <div class="col-sm-12 col-md-4">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a class="btn btn-light nostylingtext m-1 w-100" target="blank" href="https://github.com/niels-baptist/api-csv-script"> 
-                                            <i class="fab fa-github"></i><span>&nbsp;Github</span> 
-                                        </a>
-                                    </div>
-                                </div>
-                                 <!-- used technologies -->
-                                 <hr>
-                                 <div class="row">
-                                    <div class="col-sm-12 col-md-6">
-                                        <div class="btn btn-python nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                            <i class="fab fa-python btn-python"></i> <span>&nbsp;&nbsp;Python</span> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
+                    
 
+                    
                     <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
                         <div class="row centeredbothways">  
                             <div class="col-sm-12 col-md-8">
                                 <h2 class="p-3">Tellus portfolio website</h2>
-                                <p class="p-sm-1 p-lg-5">While working as a self-employed student, I made a website for Tellus Consultancy. It is a 
+                                <p class="p-sm-1 p-lg-5">While working as a self-employed student for my firm Wapiti, I made a website for Tellus Consultancy. It is a 
                                     financial advisory company that provides financial advice to small and medium sized companies, with a specialization
                                     in renawable energy, a field in which I am very interested. 
+                                    <a class="btn btn-blue mt-4" href="./tellusconsultancy.html" target="_blank">More information</a>
                                 </p>
                             </div>
                             <div class="col-sm-12 col-md-4">
@@ -310,9 +257,9 @@
                                         </a>
                                     </div>
                                 </div>
-                                 <!-- used technologies -->
-                                 <hr>
-                                 <div class="row">
+                                <!-- used technologies -->
+                                <hr>
+                                <div class="row">
                                     <div class="col-sm-12 col-md-6">
                                         <div class="btn btn-light nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
                                             <i class="fas fa-code"></i> <span>&nbsp;&nbsp;HTML</span> 
@@ -328,23 +275,22 @@
                         </div>
                     </div>
 
-                    <a class="nostylingtext" href="./internship.html">
-                        <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
-                            <div class="row centeredbothways">  
-                                <div class="col-sm-12 col-md-8">
-                                    <h2 class="p-3">VRT Internship</h2>
-                                    <p class="p-sm-1 p-lg-5">From February to the end of May, I had the opportunity to do
-                                        a 3-month internship as a Data Scientist at the Data & Intelligence unit at 
-                                        <a class="nostylingtext" href="https://www.vrt.be/">VRT</a>,
-                                        working on a project aimed at predicting and analyzing different types of article lifecycles. 
-                                    </p>
-                                </div>
-                                <div class="col-sm-12 col-md-4">
-                                    <img class="d-block m-auto w-50" src="./img/VRT_logo.svg.png" alt="Vrt logo">
-                                </div> 
+                    <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
+                        <div class="row centeredbothways">  
+                            <div class="col-sm-12 col-md-8">
+                                <h2 class="p-3">VRT Internship</h2>
+                                <p class="p-sm-1 p-lg-5">From February to the end of May, I had the opportunity to do
+                                    a 3-month internship as a Data Scientist at the Data & Intelligence unit at VRT,
+                                    working on a project aimed at predicting and analyzing different types of article lifecycles. 
+                                    <br>
+                                    <a class="btn btn-blue mt-4" href="./internship.html" target="_blank">More information</a>
+                                </p>
                             </div>
+                            <div class="col-sm-12 col-md-4">
+                                <img class="d-block m-auto w-50" src="./img/VRT_logo.svg.png" alt="Vrt logo">
+                            </div> 
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -380,9 +326,9 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <a data-toggle="tooltip" data-placement="top" title="Resume" href="files/CV Niels.pdf" 
+                        <a target="_blank" href="https://drive.google.com/file/d/1pyyjLAZQt4SIGWZHox7dx1t9Iv_XTh0-/view?usp=sharing" 
                             download="CV_Niels_Baptist" class="btn btn-light w-100 m-1">
-                            <i class="far fa-file text-blue"></i>
+                            <i class="fas fa-file text-blue"></i>
                         </a>
                     </div>
                 </div>
