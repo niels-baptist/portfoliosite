@@ -24,18 +24,17 @@
     <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/style.css">
 </head>
 <body>
-<ul class="nav sticky-top justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link" href="#aboutMe">About me</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#getintouch">Contact</a>
-    </li>
+    <ul class="nav sticky-top justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#getintouch">Contact</a>
+        </li>
     </ul>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f5085" fill-opacity="1" d="M0,256L48,234.7C96,213,192,171,288,144C384,117,480,107,576,96C672,85,768,75,864,112C960,149,1056,235,1152,261.3C1248,288,1344,256,1392,240L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>    <!-- greeting -->
     <div class="backWhite parent">
         <div class="container appear-animation">
             <div class="row w-75 mx-auto">
@@ -48,7 +47,7 @@
                         <br> 
                         I'm <span class="blue">Niels Baptist</span>
                     </h1>
-                    <h2 class="text-muted m-auto">AI Graduate</h2>
+                    <h2 class="text-muted m-auto">This is my Bachelor Thesis</h2>
                     <br>
                 </div>
             </div>
@@ -64,7 +63,7 @@
     <img id="skills" src="./img/top2.svg" class="rotate" alt="Top Wave">
 
 
-    <div class="backBlue parent">
+    <div class="backBlue parent" id="aboutMe">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -104,12 +103,13 @@
         </div>
     </div>
 
-    <img class="marginbottom" src="./img/bottom1.svg" alt="Bottom wave" id="aboutMe">
+    <img class="marginbottom" src="./img/bottom1.svg" alt="Bottom wave">
 
     <div class="spacer"></div>
 
 
     <!-- My specialties -->
+    <div class="mt-5 pt-5"></div>
     <div class="backWhite parent mt-5 pt-5">
         <div class="container">
             <div class="row">
@@ -162,18 +162,16 @@
         </div>
     </div>
 
-    <div class="spacer"></div>
-
-
     
 
 
     <!-- My projects -->
     <div class="backWhite parent tripleheight">
         <div class="container border-dark">
+            <p class="mb-5" id="projects"></p>
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="title1 p-5" id="projects">Projects</h2>
+                    <h2 class="title1 p-5">Projects</h2>
                 </div>
             </div>
             
@@ -255,49 +253,6 @@
                         </div> 
                     </div>
                 </div>
-
-                <div class="col-sm-12 border border rounded p-4 mt-4 mb-4">
-                    <div class="row centeredbothways">  
-                        <div class="col-sm-12 col-md-8">
-                            <h2 class="p-3">Waldo Detector</h2>
-                            <p class="p-sm-1 p-lg-5">For the course of Artificial Intelligence, 2 students and I worked as a team on a project for 6 weeks during
-                                the third fase of my education. The project assignment was to build a machine learning model that is able to detect Waldo 
-                                in a picture when given a signature <a class="nostylingtext" href="https://waldo.fandom.com/wiki/Where's_Waldo?" target="blank">Where-Is-Waldo?</a> 
-                                puzzle. In order to realise our solution, we used transfer learning and a local flask server.
-                            </p>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a class="btn btn-light nostylingtext m-1 w-100" target="blank" href="https://github.com/niels-baptist/there_is_waldo"> 
-                                        <i class="fab fa-github"></i><span>&nbsp;Github</span> 
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- used technologies -->
-                             <hr>
-                             <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="btn btn-python nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                        <i class="fab fa-python btn-python"></i> <span>&nbsp;&nbsp;Python</span> 
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="btn btn-ai nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                        <i class="fas fa-brain btn-ai"></i> <span>&nbsp;&nbsp;AI</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="btn btn-dark nostylingtext w-100 mt-1 mb-1" target="blank" href="https://github.com/niels-baptist/PHP_zammelse_toneelvrienden"> 
-                                        <i class="fas fa-flask white"></i> <span>&nbsp;&nbsp;Flask</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        </div> 
-                    </div>
 
 
 
@@ -394,9 +349,9 @@
             </div>
         </div>
 
-    <img src="./img/top2.svg" class="rotate" alt="Top Wave" id="getintouch">
+    <img src="./img/top2.svg" class="rotate" alt="Top Wave">
     <!-- contact -->
-    <div class="backBlue parent pt-5">
+    <div class="backBlue parent pt-5" id="getintouch">
         <div id="second" class="parent">
             <div class="container w-100 p-sm-0 p-lg-5">
                 <div class="row">

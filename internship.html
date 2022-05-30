@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VRT Internship</title>
 </head>
 <style>
@@ -41,21 +42,53 @@
         font-weight: bold;
     }
 
+    .btn-accent{
+        background-color: #5dfc72;
+        color: #000;
+    }
+
     .row{
         padding-top: 30px;
     }
+
+    .nav{
+    background-color: #5dfc72;
+    padding: 5px;
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-decoration: none;
+    }
+
+    .nav li a{
+        color: black;
+    }
 </style>
 <body style="color: #0e2349; ">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5dfc71" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,181.3C384,181,480,139,576,154.7C672,171,768,245,864,245.3C960,245,1056,171,1152,165.3C1248,160,1344,224,1392,256L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>    <div class="container">
     <div class="progress-header">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
     </div>
+    <ul class="nav sticky-top justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#top">Brief summary</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#1poa">Plan of attack</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#2ref">Reflection</a>
+        </li>
+    </ul>
     <div id="top" class="container">
         <div class="row">
             <div class="col-12">
-                <a class="nostylingtext text-dark text-decoration-none" href="./index.html">🔙 Back</a>
+                <a class="nostylingtext text-dark text-decoration-none" href="./index.html"><i class="fa-solid fa-delete-left"></i> Back</a>
             </div>
         </div>
         <div class="row">
@@ -66,280 +99,314 @@
                 <img class="w-50 d-block m-auto" src="./img/VRT_logo.svg.png" alt="VRT logo">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 class="pt-3 pb-3">1. Why VRT❔</h2>
-                <p>As a fan of sports and media, VRT has always been a part of our living room at home, whether its 
-                    watching the news or a football game. I am a huge fan of the Sporza and VRT NWS mobile and web applications
-                    and have used them on a daily basis for quite while already. Furthermore, I really looked for a large company
-                    to do my internship at, because I did not have any experience working in one and believed it would be a great
-                    learning experience. Working in a large company like VRT in the capitol of our country, two significant new 
-                    experiences for me, which in hindsight, were really great. 
-                </p>
+        <div id="shortText">
+            <div class="row">
+                <div class="col-12">
+                    <p>Between the 28th of February and the 27th of May, I worked as an intern at VRT for 3 months in the Data & Intelligence unit. Working with
+                        Sporza en VRT NWS article data, I was given the opportunity to research the article lifecycle and the parameters that affect it.
+                        I worked in a team of 12 data experts, consisting of data engineers and data scientists, with the larger part of the team being external consultants.
+                        My main tasks were to:</p>
+                        <ul>
+                            <li>Develop a machine learning model that predicts the article lifecycle of an article that is about to be published</li>
+                            <li>Make a dashboard containing the key insights of the parameters that affect the article lifecycle and the pagaviews</li>
+                        </ul>
+                        I used Amazon Web Services its Sagemaker Notebooks to make the notebooks that I needed to manipulte the data and eventually to make the model. After
+                        the model was finished, I made a flask web application in which you can input some parameters, that returns you a prediction. <br>
+                        To visualise my findings, I used a CSV export of that data and used a local instance of Microsoft Power BI. <br>
+                        Below I provided a screenshot of the dashboard that I made, as well as a GIF of the web application doing its thing.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img class="w-100 p-1" src="./img/predictor.gif" alt="GIF of article lifecycle predictor">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img class="w-100 p-1" src="./img/dshboard_1.jpg" alt="JPG of PDF export made from dashboard">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="btn btn-accent" id="readMore" onclick="readMore()">Read more <i class='fa-solid fa-angle-down'></i></a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 class="pt-3 pb-3">2. My internship project</h2>
+        <div id="fullText">
+            <div class="row">
+                <div class="col-12" id="1poa">
+                    <h2 class="pt-3 pb-3">1. Why VRT <i class="fa-solid fa-location-dot"></i></h2>
+                    <p>As a fan of sports and media, VRT has always been a part of our living room at home, whether its 
+                        watching the news or a football game. I am a huge fan of the Sporza and VRT NWS mobile and web applications
+                        and have used them on a daily basis for quite while already. Furthermore, I really looked for a large company
+                        to do my internship at, because I did not have any experience working in one and believed it would be a great
+                        learning experience. Working in a large company like VRT in the capitol of our country, two significant new 
+                        experiences for me, which in hindsight, were really great. 
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">2.1 Business case 🧑‍💼</h3>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pt-3 pb-3" >2. My internship project</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>Every month, the journalists of both Sporza and VRT NWS publish thousands of articles. These articles
-                    differ from each other greatly in many ways. For example, the articles are not always about the same topic,
-                    they can be about sports, entertainment, politics, or even about the weather. The articles are also not always
-                    written by the same journalist, and the length of the articles can be greatly different. It would be useful 
-                    therefore; if we had a way of knowing what kind of pageviews and lifecycle we would get from the articles; 
-                    before we published them. 
-                </p>
-                <p>
-                    The moment a journalist is publishing an article, it is useful to know how the article will perform,
-                    so that both the recommendation engine has extra input to work with as a reference, and the journalist
-                    can make the most of the article concerning updates & follow-up. They will for example invest more time in
-                    providing updates for an article with a very high expected number of views. And they could for example decide to
-                    include or not include a video in the article depending on the predictions made before publishing.
-                </p>
-                <p>
-                    The redaction teams at VRT NWS and Sporza also have control over the contents of the home page, and it is possible that
-                    if they feel that the homepage layout decisions will be influenced by the number of expected pageviews and duration
-                    of people reading it. It could therefore be useful to have a way of knowing what articles will be performing like, so
-                    that they have an extra metric of deciding what to include or not.
-                </p>
-                <p>
-                    There has not been much research into the influencers of pageviews and the article lifecycle yet, and the people working
-                    with this data are geniunly curious as to what things impact views and lifecycles of articles in what ways. It is therefore
-                    a plus if they can get more insight into this data, because the things they learn from it can be applied to various
-                    future projects which lean in the direction of improving the user experience and recommending the right articles at the right time.
-                </p>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">2.1 Business case <i class="fa-solid fa-user-tie"></i></h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">2.1 Technical assignment ⚙️</h3>
+            <div class="row">
+                <div class="col-12">
+                    <p>Every month, the journalists of both Sporza and VRT NWS publish thousands of articles. These articles
+                        differ from each other greatly in many ways. For example, the articles are not always about the same topic,
+                        they can be about sports, entertainment, politics, or even about the weather. The articles are also not always
+                        written by the same journalist, and the length of the articles can be greatly different. It would be useful 
+                        therefore; if we had a way of knowing what kind of pageviews and lifecycle we would get from the articles; 
+                        before we published them. 
+                    </p>
+                    <p>
+                        The moment a journalist is publishing an article, it is useful to know how the article will perform,
+                        so that both the recommendation engine has extra input to work with as a reference, and the journalist
+                        can make the most of the article concerning updates & follow-up. They will for example invest more time in
+                        providing updates for an article with a very high expected number of views. And they could for example decide to
+                        include or not include a video in the article depending on the predictions made before publishing.
+                    </p>
+                    <p>
+                        The redaction teams at VRT NWS and Sporza also have control over the contents of the home page, and it is possible that
+                        if they feel that the homepage layout decisions will be influenced by the number of expected pageviews and duration
+                        of people reading it. It could therefore be useful to have a way of knowing what articles will be performing like, so
+                        that they have an extra metric of deciding what to include or not.
+                    </p>
+                    <p>
+                        There has not been much research into the influencers of pageviews and the article lifecycle yet, and the people working
+                        with this data are geniunly curious as to what things impact views and lifecycles of articles in what ways. It is therefore
+                        a plus if they can get more insight into this data, because the things they learn from it can be applied to various
+                        future projects which lean in the direction of improving the user experience and recommending the right articles at the right time.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>There are 2 main aspects of the technical assignment: One is focused around analytics and 
-                    <span class="text-green">Business Intelligence</span>,
-                    the main goal here is to start from raw data and manufacture it into a format that allows me to create
-                    visualisations and dashboards which can be used to share valuable insights to the business.
-                    The other aspect of this assignment is focused around <span class="text-green">Data Science</span>, 
-                    where I will use the analytical data
-                    as a basis for creating training data that will allow me to create machine learning models. These models will
-                    be used to predict the expected performance of articles. With performance in thiss case, I mean the number of pageviews
-                    that an article is expected to get, and the time it will take to reach a number of views. My colleagues and I decided to choose
-                    the point where 90% of pageviews have been reached as the end of our lifecycle, so the time between publishing and
-                    reaching this point (expressed in hours) is what the machine learning model is going to predict. 
-                </p>
-                <p>In short, my technical assignment goes as follows:</p>
-                <ul>
-                    <li>
-                        <span class="text-green">Business intelligence</span>: 
-                        Research and visualise the key influencers of an article its total pageviews and lifecycle.</li>
-                    <ul>
-                        <li>Manipulate data and join the right columns to get useful data</li>
-                        <li>Visualise data using Business Intelligence tools</li>
-                        <li>Present insights to stakeholders</li>
-                    </ul>
-                    <li>
-                        <span class="text-green">Data Science</span>: 
-                        Make a predictive model to predict the expected article lifecycle.</li>
-                    <ul>
-                        <li>Use a machine learning algorithm predict the total expected pageviews</li>
-                        <li>Predict the duration of how long it will take for an article to reach 90%
-                            of its achievable pageviews.
-                        </li>
-                    </ul>
-                </p>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">2.1 Technical assignment <i class="fa-solid fa-gear"></i></h3>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">2.3 Planning ⌚</h3>
-            </div>
-        </div>
-        <div class="row">
-            <p>As with any project, we want to keep a timeline of what we're going to do. I made this planning to keep track of my progress and
-               to visualise when I decided to take on certain aspects of the project. There are 2 important things to note when looking at my
-               project planning: 
-            </p>
-            <ul>
-                <li>I was generous when deciding how long it would take me to get settled completely
-                    <ul>
-                        <li><span class="text-green">Reasoning</span>: Since I am working with completely new data, in a team that is new to me,
-                        I figured it would be beneficial not to rush the start and get on one page with everyone on what my best strategy would be.</li>
-                    </ul>
-                </li>
-                <li>The last column of my planning spans longer than the other ones
-                    <ul>
-                        <li><span class="text-green">Reasoning</span>: As you first start on a project, it is difficult to predict the way in
-                        which things will work out months later. So I decided to not go into too much detail about the last few weeks few weeks
-                        of my internship, and rather make one that allows for more flexibility.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <img class="d-block ml-0 w-100" src="./img/project_planning.png" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">2.4 Risk assessment❕</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <ul>
-                    <li>Since we are working in Amazon Web Services, a trusted platform known for its sometimes astronomical hosting costs, we will have to use the available resources wisely in order to avoid wastage. </li>
-                    <li>To avoid data loss, it is important to work with the right privilege set and pay extra attention to the environment in which you work.</li>
-                    <li>There is a learning curve when it comes to using PySpark and AWS, because we never worked with them in school. If I'm stuck with something, it's important not to wait too long before asking for help, so as not to lose any precious time.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">2.5 Information gathering & reporting 📃</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>For a good internship, it is necessary to maintain good communication with the team you are working in, so I am lucky to be involved in the daily stand-up meetings. In this unit, we work with Jira using kanban, which gives more flexibility in terms of timing compared to the traditional scrum methodology.
-                    Apart from these daily stand-up meetings, there are weekly alignment meetings on Monday between the different profiles within the team. On Thursday, there is a knowledge sharing meeting between the people of data science and on Wednesday, the planning of the data science profiles is reviewed. In this way, myself and the rest of the team are always well informed of each other.
-                    To keep my supervisor informed of my progress at the internship, I will e-mail a weekly report to both my internship mentor at Thomas More and my internship supervisor at VRT. In this I place an overview of what I worked on last week, supplemented by a paragraph in which I express myself about my experiences at my internship.
-                </p>
-                <p>
-                    After my internship finishes, I won't be there to explain my findings to the team. That's why I made sure that the work i did is well documented and the right people have access to it. I made a <a class="bold" href="">technical internship report</a> (14 pages), containing the semantic explanation
-                    of my reasoning while writing my code solution. I made sure to keep good track of my files in a well-structured <a href="https://github.com/niels-baptist/VRT_internship">Github repository</a>, containing different subfolders and different Readme files for each of the 4 'subtask' of the project I have worked on. Inside of this repo I made sure to link 
-                    my documents as well.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 class="pt-3 pb-3">3. Reflection</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">3.1 Business intelligence 📈</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>A large part of my internship consisted of data analysis. To present my findings to the staff of the VRT NWS and Sporza editors, I built a Power BI dashboard with the most important insights, so that I could process these visualisations in a PowerPoint presentation. </p>
-                <p>The data I needed to create my visualisations was pulled in from Amazon S3, and then heavily transformed in Jupyter notebooks on Amazon Sagemaker before loading it into power BI. Some of the main edits I made: </p>
-                <ul>
-                    <li>Classes: Different categories added according to percentile values for key columns</li>
-                    <li>Total & achieved pageviews: Performed calculations to determine the total and current (cumulative sum) number of readers reached for articles. To do this, I merged the article data provided to me with the corresponding Adobe Experience Manager data that monitors readers. </li>
-                    <li>Hours until 90% pageviews: Cutoff percentage set to call an article 'mature' (=90% of all reads achieved), calculations made to express in hours for each article how long it takes to get to this point.</li>
-                </ul>
-                <p>Below is image of the first tab of the dashboard:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <img class="d-block m-auto p-5 w-100" src="./img/dshboard_1.jpg" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">3.2 Machine learning 🧠</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>To obtain the right data to use for predictions, I use the same notebook as for the data pre-processing in the Business Intelligence section, with the difference that I do label encoding and logarithmic scaling. Label encoding ensures that all categorical values are converted to numerical labels, while logarithmic scaling ensures that the very large and very small views are pushed closer together.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>After the training data was made ready to work with, I started looking at the different possibilities to make predictions. After a lot of experimentation, I decided to work with a Gradient Boosting Regressor from Scikit-Learn. I hereby split my data into a training and test with an 80/20 split before I start. When training my models, I use Grid Search with cross-validation from Scikit-Learn to get the ideal set of parameters for my training.
-                    In total, I train both for VRT NWS and Sporza each 2 models in the same way, with 1 small difference: the first model 'model_total', I train with as input all the training values except the pageviews. The second model 'model_90', I train with the same input values, plus the column 'pageviews_total', which contains the total achieved pageviews of the article. 
-                    The reason why I approach it this way has to do with the way I work to make predictions. The idea is that an editor uses the model before the article is published to get a better overview of how the article will behave after it is published. It is therefore important that no data can be entered for the predictions in connection with the viewing figures, because we do not know these at the moment. The first model will therefore take the supplied article data and make a prediction of the expected total ratings. The second model will then use the same data, supplemented with the expected total ratings, to make a prediction of the expected lifetime of an article, expressed in the number of hours it will take to reach 90% of the total ratings</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>The final goal that my internship assignment should serve is to deliver a model that can make predictions about the expected pageviews. The strategy used by me to achieve this is as follows: through a web application, an editor enters the parameters of an article on a form (title length, presence of video, Article type, etc). The trained model then gives a guess of how many views it thinks the article will achieve. Immediately after that, it uses that prediction to make a guess of how long it would take to reach that number of views, expressed in hours, it then gives this back to the user, who is presented with it on a nice web page.
-                    I personally chose to add this last step to the process, because it turns the abstract idea of a Jupyter Notebook into a practical example that is much more relevant and demonstrative to show to the average end user.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <img class="d-block m-auto w-75 p-4" src="./img/predictor.gif" alt="GIF of predictions being made">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h3 class="pt-2 pb-2">3.2 Impact on VRT 🏢</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>I believe that with my internship assignment I have mainly contributed to myself as a future employee, and that I have grown as a person through this internship. As for my impact on the internship company, I think I was able to provide some insights with my BI aspect of this assignment, which I'm sure the editorial staff will be interested in continuing. In addition, I am glad that I was able to help my colleagues left and right with some small tasks that added value for them.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 class="pt-3 pb-3">4. Personal reflection 🤔</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>During this three-month internship, I learned a lot of new things, both on a technical and non-technical level. This was the first time that I was part of a large company (2143 employees), where different departments exist, each with their own priorities and specialisations. It was innovative to see what an IT department looks like and works in a company that does so much more than just IT, where there is an interaction between what the editorial team expects from the data team and vice-versa. Some of the technologies I first came into contact with during my internship:</p>
-                <ul>
-                    <li>Amazon Web Services</li>
-                    <ul>
-                        <li>Sagemaker</li>
-                        <li>S3</li>
-                    </ul>
-                    <li>Pyspark</li>
-                    <li>Seaborn</li>
-                    <li>Named Entity Recognition</li>
-                    <li>Laten Dirichlet allocation</li>
-                </ul>
-                <p>Some of the challenges I personally faced:</p>
-                <ul>
-                    <li>
-                        Work in an orderly fashion: it's easy to lose track of what you're doing when you have dozens of operations in different notebooks for multiple purposes.
-                    </li>
+            <div class="row">
+                <div class="col-12">
+                    <p>There are 2 main aspects of the technical assignment: One is focused around analytics and 
+                        <span class="text-green">Business Intelligence</span>,
+                        the main goal here is to start from raw data and manufacture it into a format that allows me to create
+                        visualisations and dashboards which can be used to share valuable insights to the business.
+                        The other aspect of this assignment is focused around <span class="text-green">Data Science</span>, 
+                        where I will use the analytical data
+                        as a basis for creating training data that will allow me to create machine learning models. These models will
+                        be used to predict the expected performance of articles. With performance in thiss case, I mean the number of pageviews
+                        that an article is expected to get, and the time it will take to reach a number of views. My colleagues and I decided to choose
+                        the point where 90% of pageviews have been reached as the end of our lifecycle, so the time between publishing and
+                        reaching this point (expressed in hours) is what the machine learning model is going to predict. 
+                    </p>
+                    <p>In short, my technical assignment goes as follows:</p>
                     <ul>
                         <li>
-                            <span class="text-green">✅ Solution</span>: I made sure to keep my notebooks orered in seperate folders with clear names and a number describing the order in which the 
-                            notebook is supposed to be executed when going throught the data flow.
-                        </li>
-                    </ul>
-                    <li>
-                        Theoretical understanding: when discussing a specific algorithm or data-manipulation technique, I often noticed that, as a professional bachelor student, I could not quite follow what the colleagues (who often have an academic bachelor's degree as well as experience) exactly meant.
+                            <span class="text-green">Business intelligence</span>: 
+                            Research and visualise the key influencers of an article its total pageviews and lifecycle.</li>
+                        <ul>
+                            <li>Manipulate data and join the right columns to get useful data</li>
+                            <li>Visualise data using Business Intelligence tools</li>
+                            <li>Present insights to stakeholders</li>
+                        </ul>
+                        <li>
+                            <span class="text-green">Data Science</span>: 
+                            Make a predictive model to predict the expected article lifecycle.</li>
+                        <ul>
+                            <li>Use a machine learning algorithm predict the total expected pageviews</li>
+                            <li>Predict the duration of how long it will take for an article to reach 90%
+                                of its achievable pageviews.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">2.3 Planning <i class="fa-solid fa-calendar-days"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <p>As with any project, we want to keep a timeline of what we're going to do. I made this planning to keep track of my progress and
+                to visualise when I decided to take on certain aspects of the project. There are 2 important things to note when looking at my
+                project planning: 
+                </p>
+                <ul>
+                    <li>I was generous when deciding how long it would take me to get settled completely
+                        <ul>
+                            <li><span class="text-green">Reasoning</span>: Since I am working with completely new data, in a team that is new to me,
+                            I figured it would be beneficial not to rush the start and get on one page with everyone on what my best strategy would be.</li>
+                        </ul>
                     </li>
-                    <ul>
-                        <li><span class="text-green">✅ Solution</span>: I spent a bunch of time researching the the theory behind certain algorhytms and consulted my colleagues if I needed help understanding something.
-                        </li>
-                    </ul>
+                    <li>The last column of my planning spans longer than the other ones
+                        <ul>
+                            <li><span class="text-green">Reasoning</span>: As you first start on a project, it is difficult to predict the way in
+                            which things will work out months later. So I decided to not go into too much detail about the last few weeks few weeks
+                            of my internship, and rather make one that allows for more flexibility.
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-                <p>In the team I was allowed to work in, Data & Intelligence, more specifically the Data Platform, I was well surrounded by a collection of external consultants (Brainjar, Datashift, Dataroots) and internal staff (VRT). I participated in daily stand-up meetings, weekly Data Science knowledge-sharing sessions and alignment meetings. Monthly, I was part of the Data & Intelligence (D&I) meeting and participated in the team retrospective. I participated in team building activities (football) and departmental keynotes. Whenever I had questions or needed advice, I could always reach out to my colleagues who were happy to help me and push me in the right direction. My colleagues were interested in the internship assignment and regularly asked of their own accord how things were going.
-                    In addition, I chose an internship in the capital, my first interaction with a big city. Even though most days, 3 to 4 per week, were spent working from home, I spent some time gazing at the busy streets while riding my folding bike through Schaarbeek. Apart from my internship hours, I also took the time to soak up the atmosphere and see the local sights. 
-                    I can look back on this internship with a positive feeling and say that I have learned a lot, both on a technical and on a personal level. This experience in the field has only confirmed and even strengthened my certainty of choosing the world of data. I would also like to thank everyone who has guided me and welcomed me, and whom I could count on whenever I had a problem.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 class="pt-3 pb-3">5. Conclusion ✅</h2>
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-block ml-0 w-100" src="./img/project_planning.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="ro<">
-            <div class="col-12">
-                <p>I have really enjoyed the past three months and learned a lot through my internship at VRT. I am proud of what I have been able to achieve and now feel I know better what I am interested in in the IT world, and grateful to the people at VRT and Thomas More for offering me this growth opportunity.</p>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">2.4 Risk assessment <i class="fa-solid fa-triangle-exclamation"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>Since we are working in Amazon Web Services, a trusted platform known for its sometimes astronomical hosting costs, we will have to use the available resources wisely in order to avoid wastage. </li>
+                        <li>To avoid data loss, it is important to work with the right privilege set and pay extra attention to the environment in which you work.</li>
+                        <li>There is a learning curve when it comes to using PySpark and AWS, because we never worked with them in school. If I'm stuck with something, it's important not to wait too long before asking for help, so as not to lose any precious time.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">2.5 Information gathering & reporting <i class="fa-solid fa-book"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>For a good internship, it is necessary to maintain good communication with the team you are working in, so I am lucky to be involved in the daily stand-up meetings. In this unit, we work with Jira using kanban, which gives more flexibility in terms of timing compared to the traditional scrum methodology.
+                        Apart from these daily stand-up meetings, there are weekly alignment meetings on Monday between the different profiles within the team. On Thursday, there is a knowledge sharing meeting between the people of data science and on Wednesday, the planning of the data science profiles is reviewed. In this way, myself and the rest of the team are always well informed of each other.
+                        To keep my supervisor informed of my progress at the internship, I will e-mail a weekly report to both my internship mentor at Thomas More and my internship supervisor at VRT. In this I place an overview of what I worked on last week, supplemented by a paragraph in which I express myself about my experiences at my internship.
+                    </p>
+                    <p>
+                        After my internship finishes, I won't be there to explain my findings to the team. That's why I made sure that the work i did is well documented and the right people have access to it. I made a <a class="bold" href="">technical internship report</a> (14 pages), containing the semantic explanation
+                        of my reasoning while writing my code solution. I made sure to keep good track of my files in a well-structured <a href="https://github.com/niels-baptist/VRT_internship">Github repository</a>, containing different subfolders and different Readme files for each of the 4 'subtask' of the project I have worked on. Inside of this repo I made sure to link 
+                        my documents as well.
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="2ref">
+                <div class="col-12">
+                    <h2 class="pt-3 pb-3">3. Reflection</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">3.1 Business intelligence <i class="fa-solid fa-chart-column"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>A large part of my internship consisted of data analysis. To present my findings to the staff of the VRT NWS and Sporza editors, I built a Power BI dashboard with the most important insights, so that I could process these visualisations in a PowerPoint presentation. </p>
+                    <p>The data I needed to create my visualisations was pulled in from Amazon S3, and then heavily transformed in Jupyter notebooks on Amazon Sagemaker before loading it into power BI. Some of the main edits I made: </p>
+                    <ul>
+                        <li>Classes: Different categories added according to percentile values for key columns</li>
+                        <li>Total & achieved pageviews: Performed calculations to determine the total and current (cumulative sum) number of readers reached for articles. To do this, I merged the article data provided to me with the corresponding Adobe Experience Manager data that monitors readers. </li>
+                        <li>Hours until 90% pageviews: Cutoff percentage set to call an article 'mature' (=90% of all reads achieved), calculations made to express in hours for each article how long it takes to get to this point.</li>
+                    </ul>
+                    <p>Below is image of the first tab of the dashboard:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-block m-auto p-5 w-100" src="./img/dshboard_1.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">3.2 Machine learning <i class="fa-solid fa-brain"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>To obtain the right data to use for predictions, I use the same notebook as for the data pre-processing in the Business Intelligence section, with the difference that I do label encoding and logarithmic scaling. Label encoding ensures that all categorical values are converted to numerical labels, while logarithmic scaling ensures that the very large and very small views are pushed closer together.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>After the training data was made ready to work with, I started looking at the different possibilities to make predictions. After a lot of experimentation, I decided to work with a Gradient Boosting Regressor from Scikit-Learn. I hereby split my data into a training and test with an 80/20 split before I start. When training my models, I use Grid Search with cross-validation from Scikit-Learn to get the ideal set of parameters for my training.
+                        In total, I train both for VRT NWS and Sporza each 2 models in the same way, with 1 small difference: the first model 'model_total', I train with as input all the training values except the pageviews. The second model 'model_90', I train with the same input values, plus the column 'pageviews_total', which contains the total achieved pageviews of the article. 
+                        The reason why I approach it this way has to do with the way I work to make predictions. The idea is that an editor uses the model before the article is published to get a better overview of how the article will behave after it is published. It is therefore important that no data can be entered for the predictions in connection with the viewing figures, because we do not know these at the moment. The first model will therefore take the supplied article data and make a prediction of the expected total ratings. The second model will then use the same data, supplemented with the expected total ratings, to make a prediction of the expected lifetime of an article, expressed in the number of hours it will take to reach 90% of the total ratings</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>The final goal that my internship assignment should serve is to deliver a model that can make predictions about the expected pageviews. The strategy used by me to achieve this is as follows: through a web application, an editor enters the parameters of an article on a form (title length, presence of video, Article type, etc). The trained model then gives a guess of how many views it thinks the article will achieve. Immediately after that, it uses that prediction to make a guess of how long it would take to reach that number of views, expressed in hours, it then gives this back to the user, who is presented with it on a nice web page.
+                        I personally chose to add this last step to the process, because it turns the abstract idea of a Jupyter Notebook into a practical example that is much more relevant and demonstrative to show to the average end user.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img class="d-block m-auto w-75 p-4" src="./img/predictor.gif" alt="GIF of predictions being made">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="pt-2 pb-2">3.2 Impact on VRT <i class="fa-solid fa-arrow-right-to-city"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>I believe that with my internship assignment I have mainly contributed to myself as a future employee, and that I have grown as a person through this internship. As for my impact on the internship company, I think I was able to provide some insights with my BI aspect of this assignment, which I'm sure the editorial staff will be interested in continuing. In addition, I am glad that I was able to help my colleagues left and right with some small tasks that added value for them.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pt-3 pb-3">4. Personal reflection <i class="fa-solid fa-person-circle-question"></i></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>During this three-month internship, I learned a lot of new things, both on a technical and non-technical level. This was the first time that I was part of a large company (2143 employees), where different departments exist, each with their own priorities and specialisations. It was innovative to see what an IT department looks like and works in a company that does so much more than just IT, where there is an interaction between what the editorial team expects from the data team and vice-versa. Some of the technologies I first came into contact with during my internship:</p>
+                    <ul>
+                        <li>Amazon Web Services</li>
+                        <ul>
+                            <li>Sagemaker</li>
+                            <li>S3</li>
+                        </ul>
+                        <li>Pyspark</li>
+                        <li>Seaborn</li>
+                        <li>Named Entity Recognition</li>
+                        <li>Laten Dirichlet allocation</li>
+                    </ul>
+                    <p>Some of the challenges I personally faced:</p>
+                    <ul>
+                        <li>
+                            Work in an orderly fashion: it's easy to lose track of what you're doing when you have dozens of operations in different notebooks for multiple purposes.
+                        </li>
+                        <ul>
+                            <li>
+                                <span class="text-green"><i class="fa-solid fa-circle-check"></i> Solution</span>: I made sure to keep my notebooks orered in seperate folders with clear names and a number describing the order in which the 
+                                notebook is supposed to be executed when going throught the data flow.
+                            </li>
+                        </ul>
+                        <li>
+                            Theoretical understanding: when discussing a specific algorithm or data-manipulation technique, I often noticed that, as a professional bachelor student, I could not quite follow what the colleagues (who often have an academic bachelor's degree as well as experience) exactly meant.
+                        </li>
+                        <ul>
+                            <li><span class="text-green"><i class="fa-solid fa-circle-check"></i> Solution</span>: I spent a bunch of time researching the the theory behind certain algorhytms and consulted my colleagues if I needed help understanding something.
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <p>In the team I was allowed to work in, Data & Intelligence, more specifically the Data Platform, I was well surrounded by a collection of external consultants (Brainjar, Datashift, Dataroots) and internal staff (VRT). I participated in daily stand-up meetings, weekly Data Science knowledge-sharing sessions and alignment meetings. Monthly, I was part of the Data & Intelligence (D&I) meeting and participated in the team retrospective. I participated in team building activities (football) and departmental keynotes. Whenever I had questions or needed advice, I could always reach out to my colleagues who were happy to help me and push me in the right direction. My colleagues were interested in the internship assignment and regularly asked of their own accord how things were going.
+                        In addition, I chose an internship in the capital, my first interaction with a big city. Even though most days, 3 to 4 per week, were spent working from home, I spent some time gazing at the busy streets while riding my folding bike through Schaarbeek. Apart from my internship hours, I also took the time to soak up the atmosphere and see the local sights. 
+                        I can look back on this internship with a positive feeling and say that I have learned a lot, both on a technical and on a personal level. This experience in the field has only confirmed and even strengthened my certainty of choosing the world of data. I would also like to thank everyone who has guided me and welcomed me, and whom I could count on whenever I had a problem.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="pt-3 pb-3">5. Conclusion <i class="fa-solid fa-clipboard-check"></i></h2>
+                </div>
+            </div>
+            <div class="ro<">
+                <div class="col-12">
+                    <p>I have really enjoyed the past three months and learned a lot through my internship at VRT. I am proud of what I have been able to achieve and now feel I know better what I am interested in in the IT world, and grateful to the people at VRT and Thomas More for offering me this growth opportunity.</p>
+                </div>
             </div>
         </div>
         <div class="row mt-5 pt-5">
@@ -351,7 +418,7 @@
             </div>
         </div>
         <div class="row m-5 p-5">
-            <a class="text-decoration-none text-green" href="#top">🔝 To the top</a>
+            <a class="text-decoration-none text-green" href="#top"><i class="fa-solid fa-up-long"></i> To the top</a>
         </div>
     </div>
 </div>
@@ -372,6 +439,26 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
     }
+
+    // when the page is loaded function
+    window.onload = function() {
+        document.getElementById("fullText").style.display = "none";
+    }
+
+    // when the user clicks on readMore button, function
+    function readMore() {
+        var fullText = document.getElementById("fullText");
+        var readMore = document.getElementById("readMore");
+        if (fullText.style.display === "none") {
+            readMore.innerHTML = "Read less <i class='fa-solid fa-angle-up'></i>";
+            fullText.style.display = "inline";
+        } else {
+            readMore.innerHTML = "Read more <i class='fa-solid fa-angle-down'></i>"; 
+            fullText.style.display = "none";
+        }
+        console.log(fullText.style.display);
+    }
+    
     </script>
 </body>
 </html>
